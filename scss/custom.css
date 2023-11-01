@@ -11982,7 +11982,7 @@ textarea.form-control-lg {
 ================================================== */
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 24px;
   font-weight: 400;
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg");
@@ -12012,26 +12012,17 @@ body {
 
 /* #Primary style
 ================================================== */
-.section {
-  position: relative;
-  width: 100%;
-  display: block;
-}
-
-.full-height {
-  height: 100vh;
-}
-
 .over-hide {
   overflow: hidden;
 }
 
 .absolute-center {
+  height: 100vh;
   position: absolute;
   top: 50%;
   left: 0;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 5px;
   transform: translateY(-50%);
   z-index: 20;
 }
