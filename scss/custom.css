@@ -11989,8 +11989,6 @@ body {
   background-position: center;
   background-repeat: repeat;
   background-size: 7%;
-  overflow-x: hidden;
-  transition: all 200ms linear;
   color: #fff;
   background-color: #1f2029;
 }
@@ -12012,33 +12010,12 @@ body {
 
 /* #Primary style
 ================================================== */
-.over-hide {
-  overflow: hidden;
-}
-
-.absolute-center {
-  height: 100vh;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  margin-top: 5px;
-  transform: translateY(-50%);
-  z-index: 20;
-}
-
 p {
   text-align: center;
   margin: 0;
   padding-top: 10px;
   transform: translate(0);
   transition: all 300ms linear;
-  transition-delay: 1700ms;
-}
-
-body.hero-anime p {
-  opacity: 1;
-  transform: translateY(40px);
   transition-delay: 1700ms;
 }
 
@@ -12313,4 +12290,39 @@ body .logo img {
 .nav-item {
   position: relative;
   transition: all 200ms linear;
+}
+
+.gallery {
+  padding: 0 0 4rem 0;
+}
+
+.contenido-imagen {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+img:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 1024px) {
+  img:hover {
+    transform: none;
+  }
+  .img-container {
+    height: 100%;
+  }
+  .img-container:hover .img-content-hover {
+    display: none;
+  }
+  .contenido-imagen {
+    display: block;
+    padding: 1rem 0;
+  }
 }/*# sourceMappingURL=custom.css.map */
