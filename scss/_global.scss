@@ -184,13 +184,4 @@ body .navbar-toggler[aria-expanded="false"] .navbar-toggler-icon {
 	z-index: 100;
 	transition: all 250ms linear;
 }
-.logo img {
-	height: 26px;
-	width: auto;
-	display: block;
-  filter: brightness(10%);
-	transition: all 250ms linear;
-}
-body .logo img {
-  filter: brightness(100%);
-}
+
