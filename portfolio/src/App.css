@@ -17,3 +17,12 @@ overflow-x: hidden;
   transition: all 200ms linear;
 }
 
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+main section{
+  flex-direction: column;
+}
+
