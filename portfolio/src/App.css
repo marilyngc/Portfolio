@@ -26,3 +26,24 @@ main section{
   flex-direction: column;
 }
 
+
+
+.cardProyect {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.cardProyect img:nth-child(2) {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+
+.cardProyect:hover img:nth-child(2) {
+  top: 30px;
+  left: 30px;
+}
