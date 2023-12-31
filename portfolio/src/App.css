@@ -47,3 +47,67 @@ main section{
   top: 30px;
   left: 30px;
 }
+
+
+
+ /* button social */
+
+ .button {
+  --background: #1E2235;
+  --color: #F6F8FF;
+  --shadow: #{rgba(#00093D, .24)};
+  
+  --z-before: -6;
+  display: block;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  border: 0;
+  background: none;
+  padding: 9px 22px 9px 16px;
+  line-height: 20px;
+  font-family: inherit;
+font-weight: bold;
+  font-size: 16px;
+  color: var(--color);
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform var(--transform-duration, .4s);
+  will-change: transform;
+  transform-style: preserve-3d;
+  transform: perspective(440px) rotateX(calc(var(--rx, 0) * 1deg)) rotateY(calc(var(--ry, 0) * 1deg)) translateZ(0);
+  &:hover {
+      --transform-duration: .16s;
+  }
+  
+  &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 12px;
+      transform: translateZ(calc(var(--z-before) * 1px));
+      background: var(--background);
+      box-shadow: 0 4px 8px var(--shadow);
+  }
+  .icon,
+  span {
+      display: inline-block;
+      vertical-align:top;
+      position: relative;
+      z-index: 1;
+      margin: 13px 0 0 0;
+  }
+  .icon {
+      --z: 2px;
+      width: 38px;
+      height: 34px;
+      margin: 10px 0 0px 0;
+      transform: translate(calc(var(--icon-x, 0) * 1px), calc(var(--icon-y, 0) * 1px)) translateZ(2px);
+     
+     
+  }
+ 
+}
