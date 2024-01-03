@@ -15,7 +15,7 @@ export const DataProyects = [
         title: "Tu mejor amigo",
         description: "Sitio inspirado en TuMejorAmigo. El sitio web permite que los dueños encuentren cuidadores confiables para sus animales.",
         tools: [react , javascript, bootstrap, sass],
-        event: ["Sass", "Javascript", "React","Bootstrap"],
+        event: ["Sass","Javascript","React","Bootstrap"],
         link: "https://marilyngc.github.io/TuMejorAmigo//"
 
 
@@ -26,7 +26,7 @@ export const DataProyects = [
         title: "E-commerce",
         description: "Proyecto final realizado en CoderHouse quedando en el TOP 10 de la comisión.",
         tools: [react,javascript ,firebase, bootstrap, sass],
-        event: ["Sass","Javascript", "React","Firebase","Bootstrap"],
+        event: ["Sass","Javascript","React","Firebase","Bootstrap"],
         link: "https://ecommerce-leyb.vercel.app"
 
 
@@ -37,7 +37,7 @@ export const DataProyects = [
         title: "Wellness Center",
         description: "Nuestra plataforma se dedica a ofrecer una experiencia centrada a la salud física como mental.",
         tools: [ react,javascript,bootstrap,sass, ],
-        event: ["Sass","Javascript", "React","Bootstrap"],
+        event: ["Sass","Javascript","React","Bootstrap"],
         link: "https://wellness-center-35r7.vercel.app"
 
 

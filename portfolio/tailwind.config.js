@@ -7,5 +7,7 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss/nesting'), // Añade esta línea para habilitar la anidación CSS
+  ],
 }
