@@ -10,6 +10,8 @@ import handlebars from "../../../assets/tools/handlebars.svg"
 
 export const ImageCard = () => {
 
+    // // filtramos los eventos correspondientes
+    // const filterEvents = proyect.event.filter((event,eventIndex) => proyect.tool[eventIndex] === tool );
     return (
        
             <div className="flex flex-col gap-10">
@@ -50,16 +52,32 @@ export const ImageCard = () => {
 <p className="text-slate-600 dark:text-slate-300 text-lg">{proyect.description}</p>
 <div className="flex gap-2 items-center mb-1">
 {proyect.tools.map((tool, index) => (
+    
         <div key={index} className="relative group/tooltip">
           <img src={tool} alt={`Tool ${index + 1}`} className="w-7 h-6" />
+          {proyect.event.map((event, eventIndex) => {
+            const toolName = tool.split('/').pop().split('.')[0]; // Extraer el nombre de la herramienta de la ruta de la imagen
+      if (event.toUpperCase() === toolName.toUpperCase()) {
+        return (
+          <span
+            key={eventIndex}
+            className="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full -translate-y-0 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover/tooltip:opacity-100 group-hover/tooltip:-translate-y-3"
+          >
+            {event}
+          </span>
+        );
+      }
+      return null;
+    })}
 
-          {proyect.event.map((e, eIndex) => (
+         
+          {/* {proyect.event.map((e, eIndex) => (
             <span
               key={eIndex}
               className="absolute pointer-events-none transition-all opacity-0 z-20 bottom-full -translate-y-0 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover/tooltip:opacity-100 group-hover/tooltip:-translate-y-3">
               {e}
             </span>
-          ))}
+          ))} */}
         </div>
       ))}
 
