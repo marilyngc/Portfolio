@@ -13,7 +13,7 @@ export const Me = () => {
                     <div class="flex flex-col gap-10">
                         <div class="flex flex-col gap-5">
                             <div class="flex flex-col gap-1 ">
-                                <p class="text-md text-slate-500 dark:text-slate-400">Soy de esas personas a la que le gusta estar haciendo un poco de todo, desde el 2022 me encuentro cubriendo varios roles en paralelo y estudiando a full 💪.</p>
+                                <p class="text-slate-600 dark:text-slate-300 text-lg">Soy de esas personas a la que le gusta estar haciendo un poco de todo, desde el 2022 me encuentro cubriendo varios roles en paralelo. Actualmente, estoy enfocada en mi formación académica en la Universidad Tecnológica Nacional (UTN), cursando la Tecnicatura Universitaria en Programación 💪.</p>
                                 </div>
                                 </div></div></section>
     )

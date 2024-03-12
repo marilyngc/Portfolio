@@ -1,6 +1,6 @@
 
-body{
-  font-family: 'Poppins', sans-serif;
+/* body{
+font-family: 'Poppins', sans-serif;
 font-size: 16px;
 line-height: 24px;
 font-weight: 400;
@@ -15,7 +15,7 @@ background-color: rgb(31 41 55);
 
 overflow-x: hidden;
   transition: all 200ms linear;
-}
+} */
 
 main{
   display: flex;
@@ -51,11 +51,10 @@ main section{
 
 
  /* button social */
-
  .button {
   --background: #1E2235;
   --color: #F6F8FF;
-  --shadow: #{rgba(#00093D, .24)};
+  --shadow: rgba(0, 9, 61, 0.24);
   
   --z-before: -6;
   display: block;
@@ -67,31 +66,34 @@ main section{
   padding: 9px 22px 9px 16px;
   line-height: 20px;
   font-family: inherit;
-font-weight: bold;
+  font-weight: bold;
   font-size: 16px;
   color: var(--color);
   -webkit-appearance: none;
   -webkit-tap-highlight-color: transparent;
-  transition: transform var(--transform-duration, .4s);
+  transition: transform var(--transform-duration, 0.4s);
   will-change: transform;
   transform-style: preserve-3d;
   transform: perspective(440px) rotateX(calc(var(--rx, 0) * 1deg)) rotateY(calc(var(--ry, 0) * 1deg)) translateZ(0);
-  &:hover {
-      --transform-duration: .16s;
-  }
-  
-  &:before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      border-radius: 12px;
-      transform: translateZ(calc(var(--z-before) * 1px));
-      background: var(--background);
-      box-shadow: 0 4px 8px var(--shadow);
-  }
+}
+
+.button:hover {
+  --transform-duration: 0.16s;
+}
+
+.button:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 12px;
+  transform: translateZ(calc(var(--z-before) * 1px));
+  background: var(--background);
+  box-shadow: 0 4px 8px var(--shadow);
+}
+
   .icon,
   span {
       display: inline-block;
@@ -110,7 +112,7 @@ font-weight: bold;
      
   }
  
-}
+
 
 
 /* 
@@ -204,4 +206,24 @@ imageCard */
 
 *::-webkit-scrollbar-thumb:active {
   background-color: #746B9D;
+}
+
+#dark {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 7%;
+  background-color: rgb(31 41 55);
+
+}
+
+
+
+#light {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 7%;
+  background-color: rgb(255, 255, 255);
+
 }
