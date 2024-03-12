@@ -7,16 +7,19 @@ import { HiOutlineArrowUpRight } from "react-icons/hi2";
 import socket from "../../../assets/tools/socket-io.svg"
 import express from "../../../assets/tools/express.svg"
 import handlebars from "../../../assets/tools/handlebars.svg"
+import { useThemeContext } from "../../../context/ThemeContext.jsx";
 
 export const ImageCard = () => {
-
+    const {contextTheme} = useThemeContext();
+    // Almacenar el valor del contexto en una variable local
+    const isDarkTheme = contextTheme === 'dark';
     return (
        
             <div className="flex flex-col gap-10">
             <div className=" grid gap-4 sm:gap-7 md:grid-cols-2 group">
             {DataProyects.map((proyect, index) => (
                 <React.Fragment key={index}>
-                     <div  className="cardProyect relative rounded-xl overflow-hidden flex bg-indigo-100 dark:bg-gray-700/50">
+                     <div  className={`cardProyect relative rounded-xl overflow-hidden flex   ${isDarkTheme ? `dark:bg-gray-700/50` : ` bg-gray-500/50`}`}>
 
 <span>
     <img
@@ -44,10 +47,10 @@ export const ImageCard = () => {
 </div>
 
 <div className="flex flex-col gap-2.5 justify-center">
-<h3 className="font-bold text-3xl text-slate-800 dark:text-white">
+<h3 className={`font-bold text-3xl  ${isDarkTheme ? `dark:text-white` : `text-slate-800`}`}>
     {proyect.title}
 </h3>
-<p className="text-slate-600 dark:text-slate-300 text-lg">{proyect.description}</p>
+<p className={` text-lg ${isDarkTheme ? `dark:text-slate-300` : `text-slate-600 `}`}>{proyect.description}</p>
 <div className="flex gap-2 items-center mb-1">
 {proyect.tools.map((tool, index) => (
     
@@ -61,28 +64,19 @@ export const ImageCard = () => {
         return (
           <span
           key={eventIndex}
-          className="absolute absolute-tooltip group-hover-tooltip pointer-events-none transition-all opacity-0 z-20 bottom-full -translate-y-0 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap text-gray-200 bg-gray-800 dark:bg-white dark:text-gray-700 before:content-[''] before:absolute before:bg-gray-800 before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 before:dark:bg-white before:dark:gray-800 group-hover/tooltip:opacity-100 group-hover/tooltip:-translate-y-3"
+          className={`absolute absolute-tooltip group-hover-tooltip pointer-events-none transition-all opacity-0 z-20 bottom-full -translate-y-0 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap   before:content-[''] before:absolute  before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2  group-hover/tooltip:opacity-100 group-hover/tooltip:-translate-y-3 ${isDarkTheme ? `before:dark:bg-white before:dark:gray-800 dark:bg-white dark:text-gray-700` : `before:bg-gray-800 text-gray-200 bg-gray-800`}`}
         >
           {event}
         </span>
-      
         );
       }
-      return null;
-      
+      return null;    
 })}
-
-         
-         
         </div>
       ))}
-
-
-
-
 </div>
 <div className="flex justify-start gap-3">
-    <a href={proyect.link} target="_blank" rel="noreferrer" className="flex gap-3 group/live hover:gap-6 transition-[gap] items-center text-lg py-2 px-5 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-bold rounded-lg">Live <div className="i-fa-pro:link-simple text-2xl group-hover/live:rotate-45 transition-transform"><IoMdLink /></div></a>
+    <a href={proyect.link} target="_blank" rel="noreferrer" className={`flex gap-3 group/live hover:gap-6 transition-[gap] items-center text-lg py-2 px-5     font-bold rounded-lg ${isDarkTheme ? `dark:text-slate-900 dark:bg-white` : `text-white bg-slate-900`}`}>Live <div className="i-fa-pro:link-simple text-2xl group-hover/live:rotate-45 transition-transform"><IoMdLink /></div></a>
     <div className="i-fa-pro:link-simple text-2xl group-hover/live:rotate-45 transition-transform">
 
     </div>
@@ -98,13 +92,13 @@ export const ImageCard = () => {
 
 
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-5">
-        <a href="https://github.com/marilyngc/Chat" target="_blank" rel="noreferrer" class="block group border-2 border-gray-100 hover:border-gray-200 dark:border-gray-700 dark:hover:border-gray-300/30 rounded-xl shadow_translate-transition hover:sm:shadow sm:hover:-translate-y-1">
-            <article class="relative flex flex-col justify-between w-full py-6 px-7">
-        <h2 class="text-gray-700 dark:text-gray-200 text-lg font-bold">Chat Server</h2>
-        <p class="text-slate-400 dark:text-slate-200">Un ejemplo mínimo de programación para un servidor de chat.</p>
-        <div class="flex gap-1 mt-1.5 items-center">
-            <div class="relative group/tooltip">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-5">
+        <a href="https://github.com/marilyngc/Chat" target="_blank" rel="noreferrer" className={`block group border-2   rounded-xl shadow_translate-transition hover:sm:shadow sm:hover:-translate-y-1 ${isDarkTheme ? `dark:border-gray-700 dark:hover:border-gray-300/30` : ` border-gray-400 hover:border-gray-500`}`}>
+            <article className="relative flex flex-col justify-between w-full py-6 px-7">
+        <h2 className={`  text-lg font-bold ${isDarkTheme ? `dark:text-gray-200` : `text-gray-700`}`}>Chat Server</h2>
+        <p className={`  ${isDarkTheme ? `dark:text-slate-200` : `text-slate-400` }`}>Un ejemplo mínimo de programación para un servidor de chat.</p>
+        <div className="flex gap-1 mt-1.5 items-center">
+            <div className="relative group/tooltip">
            
           
             <svg width="20" height="20" viewBox="0 0 512 124" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M188.432 0c17.799-.077 36.052 5.03 49.886 16.537 7.089 5.738 12.815 12.937 17.678 20.602 8.75-14.144 21.531-26.162 37.292-31.955 19.206-7.21 40.915-6.712 60.088.355 16.747 6.114 31.39 16.769 44.67 28.487 10.389 9.171 20.003 19.206 30.702 28.034 5.638 4.574 11.696 8.86 18.63 11.23 9.215 3.146 20.114.178 26.704-6.922 6.103-6.645 5.726-18.131-.997-24.2-4.275-3.689-11.585-2.947-14.61 1.97-2.646 3.9-1.162 8.762.91 12.539-5.506-4.02-11.021-9.625-11-16.935-1.14-8.451 5.129-15.906 12.638-18.863 14.654-5.86 33.029-.808 42.278 12.095 8.894 12.04 9.602 27.867 8.052 42.21-1.872 13.624-9.492 26.34-20.79 34.226-15.86 11.32-35.964 14.83-55.092 14.587-18.386-.499-36.584-4.652-53.619-11.52-28.487-11.452-55.147-27.28-84.565-36.428-9.758-3.788-20.136-5.837-30.57-6.469-8.307-.055-16.182-.443-24.024.089-9.57.92-19.084 2.88-28.044 6.39-29.916 9.305-56.975 25.531-86.005 37.006-24.512 9.536-51.67 13.967-77.687 8.672-14.554-2.946-29.042-9.381-38.866-20.845C3.684 91.145-.347 78.098.05 65.316c-.465-12.062 2.182-24.877 10.157-34.27 7.42-8.904 19.372-13.423 30.847-12.426 7.387.343 14.875 3.566 19.438 9.514 3.589 4.707 3.81 11.154 2.237 16.658-1.916 4.951-5.87 8.817-10.167 11.785 2.193-3.7 3.522-8.584.93-12.45-3.19-5.15-11.043-5.67-15.196-1.44-5.117 5.262-6.192 13.857-2.758 20.303 3.721 6.757 11.42 10.611 18.873 11.397 11.276.975 21.056-6.014 29.33-12.792 17.123-14.743 32.54-31.611 51.536-44.083 15.662-10.5 34.114-17.6 53.154-17.511z" fill="#423426"/></svg>

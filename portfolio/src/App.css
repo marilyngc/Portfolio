@@ -1,21 +1,12 @@
 
-/* body{
-font-family: 'Poppins', sans-serif;
-font-size: 16px;
-line-height: 24px;
-font-weight: 400;
-color: white;
-background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
-background-position: center;
-background-repeat: repeat;
-background-size: 7%;
-background-color: rgb(31 41 55);
-
-
-
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
 overflow-x: hidden;
   transition: all 200ms linear;
-} */
+}
 
 main{
   display: flex;
@@ -215,6 +206,7 @@ imageCard */
   background-size: 7%;
   background-color: rgb(31 41 55);
 
+  color: white;
 }
 
 
@@ -225,5 +217,33 @@ imageCard */
   background-repeat: repeat;
   background-size: 7%;
   background-color: rgb(255, 255, 255);
+  font-family: 'Poppins', sans-serif;
+
+color: rgb(31 41 55);
 
 }
+/* #light .button {
+  --background: #fcfcfc;
+  --color: #F6F8FF;
+  --shadow: rgba(0, 9, 61, 0.24);
+  
+  --z-before: -6;
+  display: block;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  border: 0;
+  background: none;
+  padding: 9px 22px 9px 16px;
+  line-height: 20px;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--color);
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform var(--transform-duration, 0.4s);
+  will-change: transform;
+  transform-style: preserve-3d;
+  transform: perspective(440px) rotateX(calc(var(--rx, 0) * 1deg)) rotateY(calc(var(--ry, 0) * 1deg)) translateZ(0);
+} */

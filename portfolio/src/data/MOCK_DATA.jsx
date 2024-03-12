@@ -38,7 +38,7 @@ export const DataProyects = [
         description: "Nuestra plataforma se dedica a ofrecer una experiencia centrada a la salud física como mental.",
         tools: [ react,javascript,bootstrap,sass, ],
         event: ["Sass","Javascript","React","Bootstrap"],
-        link: "https://wellness-center-35r7.vercel.app"
+        link: "https://wellnesscenterspaygym.com"
 
 
 

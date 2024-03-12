@@ -2,9 +2,13 @@ import { IoHeartHalf } from "react-icons/io5";
 
 import React, { useEffect } from 'react';
 import { SocialNetworks } from "../../../data/MOCK_DATA.jsx";
+import { useThemeContext } from "../../../context/ThemeContext.jsx";
 
 
 export const Social = () => {
+    const {contextTheme} = useThemeContext();
+    // Almacenar el valor del contexto en una variable local
+    const isDarkTheme = contextTheme === 'dark';
     useEffect(() => {
     
 
@@ -40,7 +44,7 @@ document.querySelectorAll('.button').forEach(button => {
 
     return (
         <section className="w-full">
-            <div className="font-bold text-2xl text-indigo-400 dark:text-gray-100 mb-6 flex items-center gap-3">
+            <div className={`font-bold text-2xl   mb-6 flex items-center gap-3 ${isDarkTheme ? `dark:text-gray-100` : `text-indigo-400`}`}>
                 <h2>Social</h2>
                 <IoHeartHalf />
                 
