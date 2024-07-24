@@ -1,11 +1,16 @@
 import home from "../assets/home.png";
 import ecommerce from "../assets/ecommerce.png"
-import wellness from "../assets/wellness.png"
+import millonario from "../assets/menu_millonario.png"
 import react from "../assets//tools/react.svg"
 import javascript from "../assets//tools/javascript.svg"
 import sass from "../assets/tools/sass.svg"
 import bootstrap from "../assets/tools/bootstrap.svg"
 import firebase from "../assets/tools/firebase.svg"
+import socket from "../assets/tools/socket.svg"
+import handlebars from "../assets/tools/handlebars.svg"
+import express from "../assets/tools/express.svg"
+import python from "../assets/tools/python.svg"
+import pygame from "../assets/tools/pygame.png"
 import { FaLinkedin,FaGithub  } from "react-icons/fa6";
 
 
@@ -33,20 +38,38 @@ export const DataProyects = [
 
     },
     {
-        img: wellness,
-        title: "Wellness Center",
-        description: "Nuestra plataforma se dedica a ofrecer una experiencia centrada a la salud física como mental.",
-        tools: [ react,javascript,bootstrap,sass, ],
-        event: ["Sass","Javascript","React","Bootstrap"],
-        link: "https://wellnesscenterspaygym.com"
+        img: millonario,
+        title: "¿Quién quiere ser millonario?",
+        description: "Juego de trivia que hace referencia al famoso programa de televisión.",
+        tools: [python,pygame],
+        event: ["Pygame","Python"],
+        link: "https://github.com/marilyngc/Quien_quiere_ser_millonario_juego"
 
 
 
-    },
+    }
+   
 
 
 ];
 
+export const DataProyectNotImage = [
+    {
+        title:"Chat Server",
+        description: "Un ejemplo mínimo de programación para un servidor de chat.",
+        tools: [handlebars,socket,express],
+        event: ["Handlebars","Socket","React","Express"],
+        link : "https://github.com/marilyngc/Chat",
+    },
+    {  
+        title: "Wellness Center",
+        description: "Plataforma dedicada a ofrecer una experiencia centrada a la salud física.",
+        tools: [ react,javascript,bootstrap,sass, ],
+        event: ["Sass","Javascript","React","Bootstrap"],
+        link: "https://wellnesscenterspaygym.com"
+
+}
+]
 
 export const SocialNetworks = [
     {
