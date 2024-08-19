@@ -1,6 +1,6 @@
-import home from "../assets/home.png";
 import ecommerce from "../assets/ecommerce.png";
 import millonario from "../assets/menu_millonario.png";
+import chat_photo from "../assets/chat-marco.png"
 import react from "../assets//tools/react.svg";
 import javascript from "../assets//tools/javascript.svg";
 import sass from "../assets/tools/sass.svg";
@@ -15,31 +15,49 @@ import { FaLinkedin, FaGithub } from "react-icons/fa6";
 
 export const DataProyects = [
   {
-    img: home,
-    title: "Tu mejor amigo",
+    img: millonario,
+    title: "¿Quién quiere ser millonario?",
     description:
-      "Sitio inspirado en TuMejorAmigo. El sitio web permite que los dueños encuentren cuidadores confiables para sus animales.",
+      "Juego de trivia que hace referencia al famoso programa de televisión.",
     tools: [
-      {
-        id: "react",
-        src: react,
-      },
-      {
-        id: "javascript",
-        src: javascript,
-      },
-      {
-        id: "bootstrap",
-        src: bootstrap,
-      },
-      {
-        id: "sass",
-        src: sass,
-      },
-    ],
-    event: ["Sass", "Javascript", "React", "Bootstrap"],
-    link: "https://marilyngc.github.io/TuMejorAmigo//",
+        {
+          id: "python",
+          src: python,
+        },
+        {
+          id: "pygame",
+          src: pygame,
+        },
+        
+      ],
+    event: ["Pygame", "Python"],
+    link: "https://github.com/marilyngc/Quien_quiere_ser_millonario_juego",
   },
+  {
+    img: chat_photo,
+    title: "Chat Server",
+    description:
+      "Un ejemplo mínimo de programación para un servidor de chat.",
+    tools: [
+        {
+          id: "handlebars",
+          src: handlebars,
+        },
+        {
+          id: "socket",
+          src: socket,
+        },
+        {
+          id: "express",
+          src: express,
+        },
+        
+      ],
+    event: ["Handlebars", "Socket", "React", "Express"],
+    link: "https://github.com/marilyngc/Chat",
+ 
+  },
+
   {
     img: ecommerce,
     title: "E-commerce",
@@ -72,49 +90,34 @@ export const DataProyects = [
     event: ["Sass", "Javascript", "React", "Firebase", "Bootstrap"],
     link: "https://ecommerce-leyb.vercel.app",
   },
-  {
-    img: millonario,
-    title: "¿Quién quiere ser millonario?",
-    description:
-      "Juego de trivia que hace referencia al famoso programa de televisión.",
-    tools: [
-        {
-          id: "python",
-          src: python,
-        },
-        {
-          id: "pygame",
-          src: pygame,
-        },
-        
-      ],
-    event: ["Pygame", "Python"],
-    link: "https://github.com/marilyngc/Quien_quiere_ser_millonario_juego",
-  },
+
 ];
 
 export const DataProyectNotImage = [
   {
-    title: "Chat Server",
-    description: "Un ejemplo mínimo de programación para un servidor de chat.",
+    title: "Tu mejor amigo",
+    description:
+      "Sitio inspirado en TuMejorAmigo. El sitio web permite que los dueños encuentren cuidadores confiables para sus animales.",
     tools: [
-        {
-          id: "handlebars",
-          src: handlebars,
-        },
-        {
-          id: "socket",
-          src: socket,
-        },
-        {
-          id: "express",
-          src: express,
-        },
-        
-      ],
-   
-    event: ["Handlebars", "Socket", "React", "Express"],
-    link: "https://github.com/marilyngc/Chat",
+      {
+        id: "react",
+        src: react,
+      },
+      {
+        id: "javascript",
+        src: javascript,
+      },
+      {
+        id: "bootstrap",
+        src: bootstrap,
+      },
+      {
+        id: "sass",
+        src: sass,
+      },
+    ],
+    event: ["Sass", "Javascript", "React", "Bootstrap"],
+    link: "https://marilyngc.github.io/TuMejorAmigo//",
   },
   {
     title: "Wellness Center",
