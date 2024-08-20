@@ -11,12 +11,12 @@ export const ImageCard = () => {
   const isDarkTheme = contextTheme === "dark";
   return (
     <div className="flex flex-col gap-10">
-      <div className=" grid gap-4 sm:gap-7 md:grid-cols-2 group">
+      <div className=" grid gap-4  sm:gap-7 md:grid-cols-2 group">
         {DataProyects.map((proyect, index) => (
           <React.Fragment key={index}>
             <div
-              className={`cardProyect relative rounded-xl overflow-hidden flex   ${
-                isDarkTheme ? `dark:bg-gray-700/50` : ` bg-gray-500/50`
+              className={`cardProyect mb-3 relative rounded-xl  overflow-hidden flex   ${
+                isDarkTheme ? `dark:bg-gray-700/50 ` : ` bg-gray-500/50`
               }`}
             >
               <span>
@@ -37,10 +37,10 @@ export const ImageCard = () => {
                   src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27928%27%20height=%27599%27/%3e"
                 />
               </span>
-              <img src={proyect.img} alt="" className="rounded-xl " />
+              <img src={proyect.img} alt={"imagen " + index + 1} className="rounded-xl " />
             </div>
 
-            <div className="flex flex-col gap-2.5 justify-center">
+            <div className="flex flex-col  gap-2.5 justify-center mb-5 ms:mb-0">
               <h3
                 className={`font-bold text-3xl  ${
                   isDarkTheme ? `dark:text-white` : `text-slate-800`

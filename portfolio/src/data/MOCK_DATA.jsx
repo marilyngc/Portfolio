@@ -40,6 +40,10 @@ export const DataProyects = [
       "Un ejemplo mínimo de programación para un servidor de chat.",
     tools: [
         {
+          id: "javascript",
+          src: javascript
+        },
+        {
           id: "handlebars",
           src: handlebars,
         },
@@ -53,7 +57,7 @@ export const DataProyects = [
         },
         
       ],
-    event: ["Handlebars", "Socket", "React", "Express"],
+    event: ["Handlebars", "Socket", "Express","Javascript"],
     link: "https://github.com/marilyngc/Chat",
  
   },

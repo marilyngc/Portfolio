@@ -15,11 +15,12 @@ export const Home = () => {
     <Profile/>
     <hr className="border border-dotted border-gray-300 dark:border-gray-600 rounded-md"/>
    <Me/>
-   <Experince/>
    <Social/>
+   <Experince/>
+   
     </main>
         </body>
-  
+    
         </>
 
     )

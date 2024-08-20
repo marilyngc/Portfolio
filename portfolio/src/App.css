@@ -62,7 +62,7 @@ main section{
   color: var(--color);
   -webkit-appearance: none;
   -webkit-tap-highlight-color: transparent;
-  transition: transform var(--transform-duration, 0.4s);
+  transition: transform var(--transform-duration, 0.1s);
   will-change: transform;
   transform-style: preserve-3d;
   transform: perspective(440px) rotateX(calc(var(--rx, 0) * 1deg)) rotateY(calc(var(--ry, 0) * 1deg)) translateZ(0);
@@ -222,28 +222,6 @@ imageCard */
 color: rgb(31 41 55);
 
 }
-/* #light .button {
-  --background: #fcfcfc;
-  --color: #F6F8FF;
-  --shadow: rgba(0, 9, 61, 0.24);
-  
-  --z-before: -6;
-  display: block;
-  outline: none;
-  cursor: pointer;
-  position: relative;
-  border: 0;
-  background: none;
-  padding: 9px 22px 9px 16px;
-  line-height: 20px;
-  font-family: inherit;
-  font-weight: bold;
-  font-size: 16px;
-  color: var(--color);
-  -webkit-appearance: none;
-  -webkit-tap-highlight-color: transparent;
-  transition: transform var(--transform-duration, 0.4s);
-  will-change: transform;
-  transform-style: preserve-3d;
-  transform: perspective(440px) rotateX(calc(var(--rx, 0) * 1deg)) rotateY(calc(var(--ry, 0) * 1deg)) translateZ(0);
-} */
+#light .button {
+  --background: #e5e5e6; 
+}
