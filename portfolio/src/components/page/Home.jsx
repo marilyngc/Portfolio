@@ -4,6 +4,7 @@ import { Experince } from "../common/Experience/Experience.jsx";
 import { Social } from "../common/Social/Social.jsx";
 import { Me } from "../common/Me/Me.jsx";
 import { useThemeContext } from "../../context/ThemeContext.jsx";
+import { Footer } from "../common/Footer/Footer.jsx";
 
 export const Home = () => {
     const {contextTheme,setContextTheme} = useThemeContext()
@@ -19,6 +20,7 @@ export const Home = () => {
    <Experince/>
    
     </main>
+    <Footer/>
         </body>
     
         </>

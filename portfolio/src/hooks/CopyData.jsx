@@ -20,7 +20,11 @@ import { TfiEmail } from "react-icons/tfi";
             : `text-fuchsia-500 bg-fuchsia-200 hover:bg-opacity-80 `
         }`}
       >
-        <TfiEmail className="i-fa-pro:file-user text-xl sm:text-lg z-auto" />
+        <TfiEmail className="i-fa-pro:file-user text-xl sm:text-lg z-auto " />
+
+
+
+       
         <span id="urlEmail" className="m-0">
           {copied ? "Copiado!" : data}
         </span>

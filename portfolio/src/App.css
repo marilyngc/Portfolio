@@ -225,3 +225,9 @@ color: rgb(31 41 55);
 #light .button {
   --background: #e5e5e6; 
 }
+
+
+.bg-dark-gray {
+  background: #1E2235;
+}
+

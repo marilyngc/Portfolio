@@ -1,4 +1,5 @@
 import { IoMdLink } from "react-icons/io";
+
 import React from "react";
 import { DataProyectNotImage, DataProyects } from "../../../data/MOCK_DATA.jsx";
 import { HiOutlineArrowUpRight } from "react-icons/hi2";
@@ -87,7 +88,7 @@ export const ImageCard = () => {
                   </div>
                 ))}
               </div>
-              <div className="flex justify-start gap-3">
+              <div className="flex justify-start gap-3 md:mt-2 ">
                 <a
                   href={proyect.link}
                   target="_blank"
@@ -104,6 +105,8 @@ export const ImageCard = () => {
                   </div>
                 </a>
                 <div className="i-fa-pro:link-simple text-2xl group-hover/live:rotate-45 transition-transform"></div>
+         
+                
               </div>
             </div>
           </React.Fragment>
