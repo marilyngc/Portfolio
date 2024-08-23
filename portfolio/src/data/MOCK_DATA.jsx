@@ -11,6 +11,7 @@ import handlebars from "../assets/tools/handlebars.svg";
 import express from "../assets/tools/express.svg";
 import python from "../assets/tools/python.svg";
 import pygame from "../assets/tools/pygame.png";
+import node from "../assets/tools/node.svg";
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
 
 export const DataProyects = [
@@ -99,6 +100,29 @@ export const DataProyects = [
 
 export const DataProyectNotImage = [
   {
+    title: "Blockchain",
+    description:
+      "Ejemplo practico de creación de un blockchain.",
+    tools: [
+      
+        {
+          id: "javascript",
+          src: javascript,
+        },
+    
+        {
+          id: "node",
+          src: node,
+        },
+    
+     
+        
+      ],
+
+    event: ["Node", "Javascript"],
+    link: "https://github.com/marilyngc/YT-blockchain",
+  },
+  {
     title: "Tu mejor amigo",
     description:
       "Sitio inspirado en TuMejorAmigo. El sitio web permite que los dueños encuentren cuidadores confiables para sus animales.",
@@ -150,6 +174,7 @@ export const DataProyectNotImage = [
     event: ["Sass", "Javascript", "React", "Bootstrap"],
     link: "https://wellnesscenterspaygym.com",
   },
+ 
 ];
 
 export const SocialNetworks = [
