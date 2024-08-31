@@ -36,11 +36,7 @@ export const Me = () => {
                 isDarkTheme ? `dark:text-slate-300` : `text-slate-600 `
               }`}
             >
-              Soy de esas personas a la que le gusta estar haciendo un poco de
-              todo, desde el 2022 me encuentro cubriendo varios roles en
-              paralelo. Actualmente, estoy enfocada en mi formación académica en
-              la Universidad Tecnológica Nacional (UTN), cursando la Tecnicatura
-              Universitaria en Programación 💪.
+           Soy de esas personas a la que le gusta estar haciendo un poco de todo, con más de un año desarrollando diferentes tipos de aplicaciones de manera independiente. Actualmente, estoy enfocada en mi formación académica en la Universidad Tecnológica Nacional (UTN), cursando la Tecnicatura Universitaria en Programación 💪.
             </p>
           </div>
         </div>

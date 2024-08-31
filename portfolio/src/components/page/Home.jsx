@@ -5,12 +5,14 @@ import { Social } from "../common/Social/Social.jsx";
 import { Me } from "../common/Me/Me.jsx";
 import { useThemeContext } from "../../context/ThemeContext.jsx";
 import { Footer } from "../common/Footer/Footer.jsx";
+import { Cursor } from "../common/Cursor/Cursor.jsx";
 
 export const Home = () => {
     const {contextTheme,setContextTheme} = useThemeContext()
     return(
         <>
         <body id={contextTheme}>
+        <Cursor/>
         <Navbar/>
         <main  className="mx-auto max-w-3xl px-5 mb-10 flex flex-col gap-10">
     <Profile/>
