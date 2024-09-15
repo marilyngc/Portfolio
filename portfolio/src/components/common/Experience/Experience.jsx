@@ -1,4 +1,5 @@
 import { useThemeContext } from "../../../context/ThemeContext.jsx";
+import { Card } from "../Card/Card.jsx";
 import { ImageCard } from "../ImageCard/ImageCard.jsx";
 
 
@@ -30,6 +31,7 @@ export const Experince = () => {
         <div className="i-fa-pro:star-half text-3xl"></div>
       </div>
       <ImageCard />
+      <Card/>
     </section>
   );
 };

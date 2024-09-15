@@ -56,7 +56,7 @@ export const Social = () => {
         {SocialNetworks.map((social) => (
           <a key={social.title} href={social.link} target="_blank">
             <button
-              className={`button ${
+              className={`button    ${
                 social.title === "Linkedin"
                   ? isDarkTheme
                     ? " text-sky-600"

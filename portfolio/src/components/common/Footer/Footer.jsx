@@ -23,18 +23,7 @@ export const Footer = () => {
         </div>{" "}
        
       </div>
-      {/* <div className="w-full md:w-1/3  flex md:justify-end justify-center md:mt-0 mt-4">
-       
-          <img
-            width="170"
-            height="29"
-            src={logo}
-            alt="MoureDev Logo"
-            loading="lazy"
-            className="h-auto"
-          />
-        
-      </div> */}
+     
     </div>
   </div>
 </footer>

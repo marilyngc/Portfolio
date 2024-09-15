@@ -19,7 +19,7 @@ export const DataProyects = [
     img: millonario,
     title: "¿Quién quiere ser millonario?",
     description:
-      "Juego de trivia que hace referencia al famoso programa de televisión.",
+      "Juego de trivia basado en el programa de televisión, creado usando programación algorítmica y POO.",
     tools: [
         {
           id: "python",
@@ -32,7 +32,8 @@ export const DataProyects = [
         
       ],
     event: ["Pygame", "Python"],
-    link: "https://github.com/marilyngc/Quien_quiere_ser_millonario_juego",
+    linkLive: "https://www.youtube.com/watch?v=Sey38ziXK74",
+    linkCode: "https://github.com/marilyngc/Quien_quiere_ser_millonario_juego",
   },
   {
     img: chat_photo,
@@ -59,7 +60,7 @@ export const DataProyects = [
         
       ],
     event: ["Handlebars", "Socket", "Express","Javascript"],
-    link: "https://github.com/marilyngc/Chat",
+    linkCode: "https://github.com/marilyngc/Chat",
  
   },
 
@@ -93,7 +94,9 @@ export const DataProyects = [
         },
       ],
     event: ["Sass", "Javascript", "React", "Firebase", "Bootstrap"],
-    link: "https://ecommerce-leyb.vercel.app",
+    linkLive: "https://ecommerce-leyb.vercel.app",
+    linkCode: "https://github.com/marilyngc/Ecommerce?tab=readme-ov-file",
+
   },
 
 ];
@@ -150,7 +153,7 @@ export const DataProyectNotImage = [
   {
     title: "Wellness Center",
     description:
-      "Plataforma dedicada a ofrecer una experiencia centrada a la salud física.",
+      "Trabajo freelance sin fines de lucro con un equipo de dos diseñadoras UX/UI y dos programadores en React.",
     tools: [
         {
           id: "react",
