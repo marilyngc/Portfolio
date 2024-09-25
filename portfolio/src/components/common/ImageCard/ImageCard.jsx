@@ -72,7 +72,7 @@ export const ImageCard = () => {
                         return (
                           <span
                             key={eventIndex}
-                            className={`absolute absolute-tooltip group-hover-tooltip pointer-events-none transition-all opacity-0 z-20 bottom-full -translate-y-0 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap   before:content-[''] before:absolute  before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2  group-hover/tooltip:opacity-100 group-hover/tooltip:-translate-y-3 ${
+                            className={`absolute  group-hover-tooltip pointer-events-none transition-all opacity-0 z-20 bottom-full -translate-y-0 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap   before:content-[''] before:absolute  before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2  group-hover/tooltip:opacity-100 group-hover/tooltip:-translate-y-3 ${
                               isDarkTheme
                                 ? `before:dark:bg-white before:dark:gray-800 dark:bg-white dark:text-gray-700`
                                 : `before:bg-gray-800 text-gray-200 bg-gray-800`
@@ -94,7 +94,7 @@ export const ImageCard = () => {
                     proyect[`link${type}`] && (
                       <>
                         <a
-                          href={proyect.linkLive}
+                          href={type == "Live" ? proyect.linkLive : proyect.linkCode}
                           target="_blank"
                           rel="noreferrer"
                           className={`   flex gap-3 group/live hover:gap-6 transition-[gap] items-center text-lg      font-bold rounded-lg         gap-2 px-3 py-2 space-x-2 text-base     rounded-xl    ${
