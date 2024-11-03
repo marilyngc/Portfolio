@@ -12,6 +12,7 @@ import express from "../assets/tools/express.svg";
 import python from "../assets/tools/python.svg";
 import pygame from "../assets/tools/pygame.png";
 import node from "../assets/tools/node.svg";
+import discord from "../assets/tools/discord.svg";
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
 
 export const DataProyects = [
@@ -124,6 +125,29 @@ export const DataProyectNotImage = [
 
     event: ["Node", "Javascript"],
     link: "https://github.com/marilyngc/YT-blockchain",
+  },
+  {
+    title: "Bot Discord ",
+    description:
+      "Bot personalizado asigna roles, da la bienvenida, reacciona a palabras clave y ofrece comandos de información.",
+    tools: [
+      
+        {
+          id: "python",
+          src: python,
+        },
+    
+        {
+          id: "discord",
+          src: discord,
+        },
+    
+     
+        
+      ],
+
+    event: ["Discord", "Python"],
+    link: "https://github.com/marilyngc/BotDiscord",
   },
   {
     title: "Tu mejor amigo",
