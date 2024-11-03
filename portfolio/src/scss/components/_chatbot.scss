@@ -1,7 +1,7 @@
 .chatbot-toggler{
     position: fixed;
     right: 40px;
-    bottom: 35px;
+    bottom: 65px;
     height: 50px;
     width: 50px;
     background:#6366F1;
@@ -27,7 +27,7 @@
 .chatbot{
     position: fixed;
     right: 40px;
-    bottom: 100px;
+    bottom: 140px;
     width: 350px;
     overflow: hidden;
     background: #fff;
@@ -87,12 +87,13 @@
     height: 32px;
     width: 32px;
     color: #fff;
-    align-items: center;
+    align-self: flex-end;
     background: #6366F1;
     text-align: center;
     line-height: 32px;
     border-radius: 4px;
     margin: 0 10px 7px 0;
+   
 }
 .chatbox .outgoing{
     margin: 20px 0;

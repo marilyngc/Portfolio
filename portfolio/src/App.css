@@ -262,8 +262,8 @@ color: rgb(31 41 55);
 
 .progress-wrap {
 	position: fixed;
-	right: 50px;
-	bottom: 50px;
+	right: 1800px;
+	bottom: 65px;
 	height: 46px;
 	width: 46px;
 	cursor: pointer;
