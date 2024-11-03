@@ -8,6 +8,7 @@ import { Footer } from "../common/Footer/Footer.jsx";
 import { Cursor } from "../common/Cursor/Cursor.jsx";
 import ProgressWrap from "../common/ProgressWrap/ProgressWrap.jsx";
 import DarkMode from "../common/DarkMode/DarkMode.jsx";
+import { ChatBot } from "../common/ChatBot/ChatBot.jsx";
 
 export const Home = () => {
     const {contextTheme,setContextTheme} = useThemeContext()
@@ -22,6 +23,7 @@ export const Home = () => {
    <Me/>
    <Social/>
    <Experince/>
+   <ChatBot/>
 <ProgressWrap/>
 {/* <DarkMode/> */}
     </main>
