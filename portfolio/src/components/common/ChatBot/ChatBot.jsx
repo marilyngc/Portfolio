@@ -57,7 +57,7 @@ export const ChatBot = () => {
     setChatMessages((prevMessages) => [...prevMessages, outgoingChatLi]);
     // Limpiamos el campo de entrada
     setUserMessage("");
-
+//hola >-<
     // Simulamos la respuesta del chatbot
     setIsTyping(true);
     setTimeout(() => {
@@ -132,6 +132,7 @@ useEffect(() => {
           </span>
         </div>
       </div>
+      
     </div>
   );
 };
