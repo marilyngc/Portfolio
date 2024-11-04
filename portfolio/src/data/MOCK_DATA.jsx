@@ -147,7 +147,7 @@ export const DataProyectNotImage = [
       ],
 
     event: ["Discord", "Python"],
-    link: "https://github.com/marilyngc/BotDiscord",
+    link: "https://youtu.be/4f9J9CRF9tI",
   },
   {
     title: "Tu mejor amigo",
