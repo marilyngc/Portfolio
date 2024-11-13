@@ -3,36 +3,34 @@ import { BsFileEarmarkPersonFill } from "react-icons/bs";
 import { GiBullseye } from "react-icons/gi";
 import { useThemeContext } from "../../../context/ThemeContext";
 import { CopyData } from "../../../hooks/CopyData";
-
-export const Profile = () => {
-  const { contextTheme } = useThemeContext();
-  // Almacenar el valor del contexto en una variable local
-  const isDarkTheme = contextTheme === "dark";
-
-  const team = [
-    {
-      avatar: avatar,
-      name: "Marilyn Celis ",
-      title: "Full - Stack Developer MERN ",
-      desc: "Soy una desarrolladora web localizado en Argentina. Actualmente me encuentro formándome como Backend Developer.. ",
-      linkedin: "https://www.linkedin.com/in/marilyn-celis-developer573/",
-      github: "https://github.com/marilyngc",
-      email: "marilyncelisgutierrez@gmail.com",
-    },
-  ];
-
-  return (
-    <section className="flex flex-col gap-16 mt-1">
-      <div className="flex flex-col sm:flex-row items-center gap-5">
-        {team.map((item, idx) => (
-          <div
-            key={idx}
-            className="flex flex-col sm:flex-row items-center   gap-11"
-          >
-            <div className="w-full flex justify-center md:justify-start md:w-1/3  ">
-              <div
-                className={`relative w-44 h-44 border-8 shadow-lg rounded-full overflow-hidden bg-indigo-100 ${
-                  isDarkTheme ? ` dark:border-gray-900/80  ` : `border-white  `
+export const Portada = () => {
+    const { contextTheme } = useThemeContext();
+    // Almacenar el valor del contexto en una variable local
+    const isDarkTheme = contextTheme === "dark";
+  
+    const team = [
+      {
+        avatar: avatar,
+        name: " Hola, Soy Marilyn",
+        title: "Desarrolladora Web",
+        desc: "Soy una desarrolladora web localizado en Argentina. Actualmente me encuentro formándome como Backend Developer.. ",
+        linkedin: "https://www.linkedin.com/in/marilyn-celis-developer573/",
+        github: "https://github.com/marilyngc",
+        email: "marilyncelisgutierrez@gmail.com",
+      },
+    ];
+  
+    return (
+     
+   <section className="max-w-4xl pt-20 pb-10 lg:pb-10 lg:py-44 mx-auto" data-astro-cid-bbe6dxrz="">
+     {team.map((item, idx) => (
+             <article key={idx} className="text-cWhite  text-center px-2 space-y-2 sm:space-y-3 md:space-y-4 lg:space-y-5" data-astro-cid-bbe6dxrz="">
+             <header className="space-y-2" data-astro-cid-bbe6dxrz=""> 
+            
+                <picture data-astro-cid-bbe6dxrz=""> 
+                <div
+                className={`relative w-30 h-20 border-8 shadow-lg rounded-full overflow-hidden bg-neutral-900 mx-auto ${
+                  isDarkTheme ? ` dark:border-neutral-800  ` : `border-white  `
                 } `}
               >
                 <img
@@ -41,24 +39,21 @@ export const Profile = () => {
                   alt="Foto de perfil"
                 />
               </div>
-            </div>
-            <div className="flex flex-col items-center sm:items-start gap-2 ">
-              <h4
-                className={`text-2xl sm:text-4xl text-center sm:text-left font-bold  ${
-                  isDarkTheme ? `dark:text-slate-100 ` : `text-slate-600`
-                }`}
-              >
-                {item.name}
-              </h4>
-              <p
-                className={` text-sm sm:text-lg  max-w-xl rounded-2xl ${
-                  isDarkTheme ? `dark:text-slate-300` : `text-slate-700`
-                }`}
-              >
-                {item.title}
-              </p>
-
-              <div className="mt-2 gap-4 text-gray-400 flex flex-col sm:flex-row sm:justify-start sm:items-start    ">
+                 </picture> <strong className="text-[clamp(14px,6vw,18px)] font-normal text-base block w-fit mx-auto rounded-md bg-cPaper" data-astro-cid-bbe6dxrz="">@mxtel</strong>
+                  </header> 
+                  <h1 className={`text-[clamp(1.875rem,2vw+1rem,5rem)] font-bold leading-none ${
+                    isDarkTheme? `dark:text-slate-100`: `text-slate-600`
+                  }`} > {item.name}</h1> 
+                  <strong className={`font-normal block text-[clamp(1.235rem,2vw+1rem,1.375rem)] text-cWhite ${
+                    isDarkTheme? `dark:text-slate-100`: `text-slate-600`
+                  }`}> {item.title}</strong>
+                   <h2 className={`text-[clamp(2.125rem,2vw+1rem,3rem)] font-medium leading-none text-pretty ${
+                    isDarkTheme? `dark:text-slate-100`: `text-slate-600`
+                  }`}> Apasionada por crear productos digitales 
+                  
+                    </h2>
+                     
+                     <div className="mt-1 mx-auto  pt-4 gap-4 text-gray-400 flex  flex-col  items-center  sm:flex-row sm:justify-center sm:items-center  ">
                 <div className="flex  justify-center gap-4">
                 <div className="relative group/tooltip">
                 <div
@@ -101,10 +96,12 @@ export const Profile = () => {
 
                 <CopyData data={item.email} isDarkTheme={isDarkTheme} />
               </div>
-            </div>
-          </div>
+                      </article>
         ))}
-      </div>
-    </section>
-  );
-};
+    
+                   </section>
+  
+    
+    );
+  };
+  

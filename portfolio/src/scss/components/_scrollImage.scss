@@ -1,0 +1,42 @@
+.image-left, .image-right ,.image-center{
+    position: absolute;
+    opacity: 0.8;
+    width: 10%;
+    overflow: hidden !important;
+  }
+  
+  .image-left {
+  
+    top: 450px;
+    left: 200px;
+    transition: transform 1s ease;
+    animation: floatMargin 3s ease-in-out infinite; /* Flotación usando margin-top */
+  }
+  
+  .image-center{
+    
+    top: 1150px;
+   right: 300px;
+    transition: transform 3s ease;
+    animation: floatMargin 3s ease-in-out infinite 1s; /* Retardo en la animación de la derecha */
+  }
+  .image-right {
+
+    top: 1800px;
+    left: 200px;
+    transition: transform 1.5s ease;
+    animation: floatMargin 3s ease-in-out infinite 1s; /* Retardo en la animación de la derecha */
+  }
+  
+  @keyframes floatMargin {
+    0% {
+      margin-top: 0px;
+    }
+    50% {
+      margin-top: -15px; /* Ajusta la altura del “flotamiento” */
+    }
+    100% {
+      margin-top: 0px;
+    }
+  }
+  

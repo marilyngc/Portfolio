@@ -12,9 +12,10 @@ function App() {
 
   return (
    
-     
-      <Home />
-      
+    <div>
+    {/* Todo el contenido de tu aplicación */}
+    <Home />
+  </div>
       
     
   )

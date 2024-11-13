@@ -3,7 +3,7 @@
 export const Footer = () => {
   return (
     <>
-    <footer className="bg-dark-gray hcode-footer-bottom ">
+    <footer className="hcode-footer-bottom bg-neutral-900 ">
   <div className="container mx-auto">
     <div className="flex flex-wrap justify-between py-3">
       <div className="w-full md:w-2/3 text-left text-gray-500 text-sm  xs:text-center xs:mb-2">
@@ -18,7 +18,7 @@ export const Footer = () => {
             >
               Marilyn
             </a>{" "}
-            v1. Aprendiendo a construir software con ♥ desde Maracaibo para el mundo.
+            v2. Aprendiendo a construir software con ♥ desde Maracaibo para el mundo.
           </div>
         </div>{" "}
        

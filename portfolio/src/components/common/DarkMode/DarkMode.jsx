@@ -12,7 +12,7 @@ const DarkMode = () => {
     };
   
   return (
-    <div className={`switch_mode  ${isDarkTheme ? 'switched' : ''}`} onClick={handleSwitch}>
+    <div className={`switch_mode  " ${isDarkTheme ? 'switched' : ''}`} onClick={handleSwitch}>
     <div className="circle_mode">
     
     </div>

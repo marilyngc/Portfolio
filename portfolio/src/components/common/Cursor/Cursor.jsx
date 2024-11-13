@@ -6,16 +6,16 @@ export const Cursor = () => {
     const circles = document.querySelectorAll(".circle");
 
     const colors = [
-        "#1E2235", // Color base
-        "#292E47", // Azul grisáceo oscuro
-        "#343858", // Azul grisáceo más claro
-        "#3F436A", // Azul medio grisáceo
-        "#4A4E7B", // Azul más claro grisáceo
-        "#56598C", // Azul grisáceo claro
-        "#6B6F9F", // Azul grisáceo muy claro
-        "#8085B3", // Azul grisáceo pálido
-        "#959AC7", // Azul grisáceo pálido muy claro
-        "#AAAFDA", // Azul grisáceo casi blanco
+      "rgba(26, 26, 26, 1)",     // Gris muy oscuro, opacidad 100%
+      "rgba(45, 45, 45, 1)",     // Gris muy oscuro más claro
+      "rgba(63, 63, 63, 1)",     // Gris oscuro más claro
+      "rgba(82, 82, 82, 1)",     // Gris medio oscuro
+      "rgba(102, 102, 102, 1)",  // Gris medio
+      "rgba(121, 121, 121, 1)",  // Gris medio claro
+      "rgba(141, 141, 141, 1)",  // Gris más claro
+      "rgba(160, 160, 160, 1)",  // Gris claro
+      "rgba(180, 180, 180, 1)",  // Gris más claro
+      "rgba(200, 200, 200, 1)",  // Gris muy claro
       ];
       
 
@@ -64,7 +64,11 @@ export const Cursor = () => {
   return (
     <>
       {Array.from({ length: 20 }).map((_, index) => (
-        <div key={index} className="circle"></div>
+        <> 
+        {/* <div  key={index}className="bat"></div> */}
+        <div key={index} className="circle"></div> </>
+
+       
       ))}
     </>
   );

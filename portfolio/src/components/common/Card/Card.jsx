@@ -29,9 +29,9 @@ export const Card = () => {
                   {proyect.title}
                 </h2>
                 <p
-                  className={`  ${
-                    isDarkTheme ? `dark:text-slate-200` : `text-slate-400`
-                  }`}
+                className={`  font-normal text-cAccent text-pretty ${
+                  isDarkTheme ? `text-base ` : `text-base  `
+                }`}
                 >
                   {proyect.description}
                 </p>
@@ -49,7 +49,7 @@ export const Card = () => {
                         const eventName = evento.toLowerCase();
 
                         if (eventName == toolName) {
-                          console.log("herramienta:", toolName, eventName);
+                          // console.log("herramienta:", toolName, eventName);
                           // console.log("evento:",eventName)
                           return (
                             <span

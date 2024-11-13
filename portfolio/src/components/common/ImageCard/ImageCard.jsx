@@ -11,11 +11,11 @@ export const ImageCard = () => {
   const isDarkTheme = contextTheme === "dark";
   return (
     <div className="flex flex-col gap-10 mb-9">
-      <div className=" grid gap-4  sm:gap-7 md:grid-cols-2 group">
+      <div className=" grid gap-0 sm:gap-7 sm:gap-7 md:grid-cols-12 group">
         {DataProyects.map((proyect, index) => (
-          <React.Fragment key={index}>
-            <div
-              className={`cardProyect mb-3 relative rounded-xl  overflow-hidden flex   ${
+          <React.Fragment >
+            <div key={index}
+              className={`cardProyect mb-5 relative rounded-xl  overflow-hidden flex col-span-4  ${
                 isDarkTheme ? `dark:bg-gray-700/50 ` : ` bg-gray-500/50`
               }`}
             >
@@ -44,7 +44,7 @@ export const ImageCard = () => {
               />
             </div>
 
-            <div className="flex flex-col  gap-2.5 justify-center mb-5 ms:mb-0">
+            <div  className="lg:w-1/2  flex flex-col  gap-2.5 justify-start  col-span-8 mb-5 ms:mb-0">
               <h3
                 className={`font-bold text-3xl  ${
                   isDarkTheme ? `dark:text-white` : `text-slate-800`
@@ -53,8 +53,8 @@ export const ImageCard = () => {
                 {proyect.title}
               </h3>
               <p
-                className={` text-lg ${
-                  isDarkTheme ? `dark:text-slate-300` : `text-slate-600 `
+                className={`  font-normal text-cAccent text-pretty ${
+                  isDarkTheme ? `text-base ` : `text-base  `
                 }`}
               >
                 {proyect.description}
@@ -88,12 +88,17 @@ export const ImageCard = () => {
                   </div>
                 ))}
               </div>
-              <div className="flex justify-start gap-3 md:mt-2 ">
+              <div  className="flex justify-start gap-3 md:mt-2 ">
+
                 {["Live", "Code"].map(
-                  (type) =>
+                  
+                  (type,index) =>
+
                     proyect[`link${type}`] && (
                       <>
+
                         <a
+                        key={index}
                           href={type == "Live" ? proyect.linkLive : proyect.linkCode}
                           target="_blank"
                           rel="noreferrer"
@@ -109,11 +114,13 @@ export const ImageCard = () => {
                           </div>
                         </a>
                         <div className="i-fa-pro:link-simple text-2xl group-hover/live:rotate-45 transition-transform"></div>
+                        
                       </>
                     )
+                    
                 )}
 
-              </div>
+</div>
             </div>
           </React.Fragment>
         ))}

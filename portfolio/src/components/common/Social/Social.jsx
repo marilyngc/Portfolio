@@ -29,34 +29,20 @@ export const Social = () => {
   }, []); // El segundo argumento es un array de dependencias vacío para que se ejecute solo una vez al montar el componente
 
   return (
-    <section className="w-full">
+    <section className="mb-6 pt-8 max-w-6xl mx-auto lg:pt-15 ">
       <div
-        className={`font-bold text-2xl   mb-6 flex items-center gap-3 ${
-          isDarkTheme ? `dark:text-gray-100` : `text-indigo-400`
+        className={`font-semibold text-2xl   mb-6 flex items-center gap-3 ${
+          isDarkTheme ? `dark:text-gray-100` : `text-gray-700`
         }`}
       >
         <h2>Social</h2>
-        <script src="https://cdn.lordicon.com/lordicon.js"></script>
-
-        <script src="https://cdn.lordicon.com/lordicon.js"></script>
-        <lord-icon
-          src="https://cdn.lordicon.com/jdsvypqr.json"
-          trigger="in"
-          delay="1500"
-          stroke="bold"
-          state="in-reveal"
-          colors={
-            isDarkTheme
-              ? "primary:#ffffff,secondary:#c69cf4"
-              : "primary:#a5b4fc,secondary:#c69cf4"
-          }
-        ></lord-icon>
+      
       </div>
       <div className="flex flex-wrap gap-3 ">
         {SocialNetworks.map((social) => (
           <a key={social.title} href={social.link} target="_blank">
             <button
-              className={`button    ${
+              className={`button font-semibold   ${
                 social.title === "Linkedin"
                   ? isDarkTheme
                     ? " text-sky-600"
