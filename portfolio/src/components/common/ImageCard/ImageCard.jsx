@@ -1,7 +1,7 @@
 import { IoMdLink } from "react-icons/io";
 import { FiGithub } from "react-icons/fi";
 import React from "react";
-import {  DataProyects } from "../../../data/MOCK_DATA.jsx";
+import { DataProyects } from "../../../data/MOCK_DATA.jsx";
 
 import { useThemeContext } from "../../../context/ThemeContext.jsx";
 
@@ -11,11 +11,12 @@ export const ImageCard = () => {
   const isDarkTheme = contextTheme === "dark";
   return (
     <div className="flex flex-col gap-10 mb-9">
-      <div className=" grid gap-0 sm:gap-7 sm:gap-7 md:grid-cols-12 group">
+      <div className=" grid gap-0 sm:gap-7 md:grid-cols-12 group">
         {DataProyects.map((proyect, index) => (
-          <React.Fragment >
-            <div key={index}
-              className={`cardProyect mb-5 relative rounded-xl  overflow-hidden flex col-span-4  ${
+          <React.Fragment>
+            <div
+              key={index}
+              className={`cardProyect mb-5  relative rounded-xl  overflow-hidden flex col-span-7 lg:col-span-4  ${
                 isDarkTheme ? `dark:bg-gray-700/50 ` : ` bg-gray-500/50`
               }`}
             >
@@ -44,7 +45,7 @@ export const ImageCard = () => {
               />
             </div>
 
-            <div  className="lg:w-1/2  flex flex-col  gap-2.5 justify-start  col-span-8 mb-5 ms:mb-0">
+            <div className="lg:w-1/2  flex flex-col  gap-2.5 justify-start  col-span-8 lg:mb-5 mb-12 ms:mb-0">
               <h3
                 className={`font-bold text-3xl  ${
                   isDarkTheme ? `dark:text-white` : `text-slate-800`
@@ -88,45 +89,45 @@ export const ImageCard = () => {
                   </div>
                 ))}
               </div>
-              <div  className="flex justify-start gap-3 md:mt-2 ">
-
+              <div className="flex justify-start gap-3 md:mt-2 ">
                 {["Live", "Code"].map(
-                  
-                  (type,index) =>
-
+                  (type, index) =>
                     proyect[`link${type}`] && (
                       <>
-
                         <a
-                        key={index}
-                          href={type == "Live" ? proyect.linkLive : proyect.linkCode}
                           target="_blank"
-                          rel="noreferrer"
-                          className={`   flex gap-3 group/live hover:gap-6 transition-[gap] items-center text-lg      font-bold rounded-lg         gap-2 px-3 py-2 space-x-2 text-base     rounded-xl    ${
+                          href={
+                            type == "Live" ? proyect.linkLive : proyect.linkCode
+                          }
+                          role="link"
+                          class={` text-base flex gap-3 group/live hover:gap-5  group inline-flex max-w-fit items-center justify-center gap-2 space-x-2 rounded-xl border     px-3 py-2 text-gray-800 transition-all duration-500    hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black   ${
                             isDarkTheme
-                              ? `dark:text-black bg-gray-200 `
-                              : `dark:text-black hover:text-white shadow  bg-gray-200 transition-[gap]  hover:bg-gray-800   `
+                              ? ` dark:border-gray-600 dark:bg-neutral-900  dark:text-white dark:hover:border-gray-100 dark:hover:bg-gray-200  dark:hover:text-gray-800`
+                              : `dark:text-black border-gray-900 hover:text-white shadow  bg-gray-100  transition-[gap]  hover:bg-gray-700   `
                           }`}
                         >
-                          {type}{" "}
-                          <div className={`i-fa-pro:link-simple text-2xl ${type == "Live" ? "group-hover/live:rotate-45" : "group-hover/live:rotate-0"} transition-transform`}>
-                           {type == "Live" ? <IoMdLink /> : <FiGithub /> } 
+                           <div
+                            className={`i-fa-pro:link-simple text-2xl ${
+                              type == "Live"
+                                ? "group-hover/live:rotate-45"
+                                : "group-hover/live:rotate-0"
+                            } transition-transform`}
+                          >
+                            {type == "Live" ? <IoMdLink /> : <FiGithub />}
                           </div>
-                        </a>
-                        <div className="i-fa-pro:link-simple text-2xl group-hover/live:rotate-45 transition-transform"></div>
+                          Vista previa
                         
+                        </a>
+                      
+                        <div className="i-fa-pro:link-simple text-2xl group-hover/live:rotate-45 transition-transform"></div>
                       </>
                     )
-                    
                 )}
-
-</div>
+              </div>
             </div>
           </React.Fragment>
         ))}
       </div>
-
-    
     </div>
   );
 };

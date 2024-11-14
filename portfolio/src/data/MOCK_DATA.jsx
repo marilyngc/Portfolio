@@ -98,7 +98,7 @@ export const DataProyects = [
 
 export const DataProyectNotImage = [
   {
-    title: "Blockchain",
+    title: "Blockchain ⛓️",
     description: "Ejemplo practico de creación de un blockchain.",
     tools: [
       {
@@ -133,6 +133,22 @@ export const DataProyectNotImage = [
 
     event: ["Discord", "Python"],
     link: "https://youtu.be/4f9J9CRF9tI",
+  },
+  {
+    title: "Gestión de Pacientes 🥼",
+    description:
+      "Aplicación de consola para la gestión de pacientes, que permite agregar, modificar, eliminar, buscar, ordenar y mostrar pacientes, así como calcular promedios de sus atributos.",
+    tools: [
+      {
+        id: "python",
+        src: python,
+      },
+
+     
+    ],
+
+    event: [ "Python"],
+    link: "https://github.com/marilyngc/PP_PROGRAMACION_I_111_celis?tab=readme-ov-file",
   },
   {
     title: "Incoming... 😎",

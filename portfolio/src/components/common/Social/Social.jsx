@@ -29,7 +29,7 @@ export const Social = () => {
   }, []); // El segundo argumento es un array de dependencias vacío para que se ejecute solo una vez al montar el componente
 
   return (
-    <section className="mb-6 pt-8 max-w-6xl mx-auto lg:pt-15 ">
+    <section className="mb-6 pt-8 max-w-6xl ms-80 ps-10 lg:pt-15 ">
       <div
         className={`font-semibold text-2xl   mb-6 flex items-center gap-3 ${
           isDarkTheme ? `dark:text-gray-100` : `text-gray-700`
