@@ -1,6 +1,8 @@
 import avatar from "../../../assets/avatar/avatar.png";
 import { BsFileEarmarkPersonFill } from "react-icons/bs";
+
 import { GiBullseye } from "react-icons/gi";
+import { MdCloudDownload } from "react-icons/md";
 import { useThemeContext } from "../../../context/ThemeContext";
 import { CopyData } from "../../../hooks/CopyData";
 export const Portada = () => {
@@ -87,7 +89,7 @@ export const Portada = () => {
                         : `text-indigo-500 bg-indigo-100 hover:bg-opacity-80 `
                     }`}
                   >
-                    <BsFileEarmarkPersonFill className="i-fa-pro:file-user text-xl sm:text-lg z-auto" />
+                    <MdCloudDownload className="i-fa-pro:file-user text-xl sm:text-lg z-auto" />
                     Resumen
                   </button>
                 </a>

@@ -106,6 +106,7 @@ export const ImageCard = () => {
                               : `dark:text-black border-gray-900 hover:text-white shadow  bg-gray-100  transition-[gap]  hover:bg-gray-700   `
                           }`}
                         >
+                          
                            <div
                             className={`i-fa-pro:link-simple text-2xl ${
                               type == "Live"
@@ -115,7 +116,7 @@ export const ImageCard = () => {
                           >
                             {type == "Live" ? <IoMdLink /> : <FiGithub />}
                           </div>
-                          Vista previa
+                         {type}
                         
                         </a>
                       

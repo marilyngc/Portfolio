@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { TfiEmail } from "react-icons/tfi";
-
+import { IoCopyOutline } from "react-icons/io5";
 export function CopyData({ data, isDarkTheme }) {
   const [copied, setCopied] = useState(false);
 
@@ -20,7 +19,7 @@ export function CopyData({ data, isDarkTheme }) {
         : `text-fuchsia-500 bg-fuchsia-200 hover:bg-opacity-80`
     }`}
   >
-    <TfiEmail className="i-fa-pro:file-user text-xl sm:text-lg z-auto" />
+    <IoCopyOutline className="i-fa-pro:file-user text-xl sm:text-lg z-auto" />
     <span
       className={`absolute pointer-events-none transition-all opacity-0 z-20 bottom-full -translate-y-0 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap before:content-[''] before:absolute before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 group-hover:opacity-100 group-hover:-translate-y-3 ${
         isDarkTheme
@@ -28,7 +27,7 @@ export function CopyData({ data, isDarkTheme }) {
           : `before:bg-gray-800 text-gray-200 bg-gray-800`
       }`}
     >
-      ¡Click me!
+      Copiar Email 
     </span>
     <span id="urlEmail" className="m-0">
       {copied ? "Copiado!" : data}

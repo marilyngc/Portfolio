@@ -52,9 +52,9 @@ main section{
 
 
 
- /* button social */
+ /* ton social */
  .button {
-  --background:  rgb(34, 34, 34);
+  --background: rgb(26 26 26 / 0.8);
   --color: #F6F8FF;
   --shadow: rgba(0, 9, 61, 0.24);
   

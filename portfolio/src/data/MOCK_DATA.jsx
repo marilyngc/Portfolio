@@ -148,7 +148,7 @@ export const DataProyectNotImage = [
     ],
 
     event: [ "Python"],
-    link: "https://github.com/marilyngc/PP_PROGRAMACION_I_111_celis?tab=readme-ov-file",
+    link: "https://github.com/marilyngc/Gestion-de-Pacientes",
   },
   {
     title: "Incoming... 😎",
@@ -172,6 +172,25 @@ export const SocialNetworks = [
     icon: <FaGithub className="text-2xl" />,
   },
 ];
+
+export const FormacionData = [
+  {
+    fecha :"Marzo. 2024 - Presente ·",
+    localidad:"Buenos Aires, Argentina · Hibrido",
+    institucion :"Universidad Tecnológica Nacional (UTN)",
+    titulo:"Tecnicatura Universitaria en Programación",
+    descripcion:"Estudié Python con POO, programación algorítmica y Java. Adquirí experiencia en el uso de bases de datos SQL Server con tablas relacionales con MYSQL. También profundicé en arquitectura de software y sistemas operativos."
+
+  },
+  {
+    fecha :"Octubre. 2022 - Diciembre. 2023 · 1 año y 2 meses",
+    localidad:"Buenos Aires, Argentina · Remoto",
+    institucion :"Coder House",
+    titulo:"Desarrolladora Full-Stack (MERN)",
+    descripcion:"Graduada destacada de CoderHouse, logré posicionarme en el top 10 de mi comisión. Como reconocimiento, me ofrecieron un trabajo freelance con un grupo destacado, consolidando así mi habilidad en desarrollo Full Stack MERN."
+
+  },
+]
 
 export const SkillsInfo = [
   {
