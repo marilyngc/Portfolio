@@ -15,7 +15,7 @@ export const Skills = () => {
                     isDarkTheme ? `dark:text-gray-200` : `text-gray-700`
                   }`}>Tecnologías</h2>{" "}
       </header>{" "}
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-6">
+      <div className="grid grid-cols-3 gap-4 md:grid-cols-6">
         {" "}
         {SkillsInfo.map((item, index) => (
           <div key={index} className="lg:h-32  flex max-w-xs flex-col items-center space-y-2 rounded-lg border border-neutral-800 lg:py-5 lg:px-11 p-16 ">
