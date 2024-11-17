@@ -1,4 +1,4 @@
-import ecommerce from "../assets/ecommerce.png";
+import ecommerce from "../assets/skincare.png";
 import millonario from "../assets/menu_millonario.png";
 import chat_photo from "../assets/chat-marco.png";
 import tictactou from "../assets/tictactou.png";
