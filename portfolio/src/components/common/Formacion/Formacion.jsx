@@ -20,7 +20,7 @@ export const Formacion = () => {
           <ol className="relative border-s border-neutral-500 md:border-cAccent ml-2 md:ml-3">
             {" "}
             {FormacionData.map((item,index) => (
-                <li className="mb-10 ms-4">
+                <li key={index} className="mb-10 ms-4">
                 {" "}
                 <span className="absolute block w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-fuchsia-700  bg-fuchsia-700 "></span>{" "}
                 <time className="text-sm font-normal leading-none text-cAccent capitalize">
@@ -32,7 +32,7 @@ export const Formacion = () => {
                   {item.localidad}{" "}
                 </span>{" "}
                 <a
-                  href="https://www.utn.edu.ar/es/"
+                  href={item.url}
                   target="_blank nofollow"
                   aria-label="SoundAdvice"
                   className={`text-xl w-fit font-semibold hover:text-fuchsia-500 transition-all duration-150 ease-in  mt-2 capitalize group flex items-center gap-[6px]  ${

@@ -63,13 +63,12 @@ export const Cursor = () => {
 
   return (
     <>
-      {Array.from({ length: 20 }).map((_, index) => (
-        <> 
-        {/* <div  key={index}className="bat"></div> */}
-        <div key={index} className="circle"></div> </>
-
-       
-      ))}
+       {Array.from({ length: 20 }).map((_, index) => (
+      <React.Fragment key={index}>
+        <div className="bat"></div>
+        <div className="circle"></div>
+      </React.Fragment>
+    ))}
     </>
   );
 };

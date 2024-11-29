@@ -11,12 +11,13 @@ import { Trabajo } from "../common/Trabajo/Trabajo.jsx";
 import { Skills } from "../common/Skills/Skills.jsx";
 import { Formacion } from "../common/Formacion/Formacion.jsx";
 import { Portada } from "../common/Portada/Portada.jsx";
+import AboutMe from "../common/AboutMe/AboutMe.jsx";
 
 export const Home = () => {
   const { contextTheme, setContextTheme } = useThemeContext();
   return (
   
-      <body id={contextTheme}>
+      <div id={contextTheme}>
       
    
         <header className="scroll-animation hidden lg:block full p-2 fixed top-0 left-0 right-0 z-[9999]">
@@ -34,11 +35,13 @@ export const Home = () => {
           <ChatBot />
           <ProgressWrap />
           <Skills />
+          <AboutMe/>
           <Social />
+         
         </main>
        
         <Footer />
-      </body>
+      </div>
    
   );
 };

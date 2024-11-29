@@ -1,23 +1,30 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
-export const  ThemeContext = createContext();
+export const ThemeContext = createContext();
 
-// creamos proveedor para proveedor a los componentes hijos
-export const ThemeContextProvider = ({children}) => {
-    const [contextTheme, setContextTheme] = useState("dark"); // valor principal
-    // pasamos a valor objeto
-    const values = {contextTheme,setContextTheme}
-    return (
-        <ThemeContext.Provider value={values}>
+// creamos proveedor para los componentes hijos
+export const ThemeContextProvider = ({ children }) => {
+  // Leemos el tema desde localStorage o usamos el valor por defecto "dark"
+  const storedTheme = localStorage.getItem("theme");
+  const [contextTheme, setContextTheme] = useState(storedTheme || "dark");
 
-        {/* ponemos que todos los hijos van a recibir ese valor */}
-            {children}
+  // Guardamos el tema en localStorage cada vez que cambie
+  useEffect(() => {
+    localStorage.setItem("theme", contextTheme);
+  }, [contextTheme]);
 
-        </ThemeContext.Provider>
-    )
-}
+  // pasamos el valor en un objeto
+  const values = { contextTheme, setContextTheme };
+
+  return (
+    <ThemeContext.Provider value={values}>
+      {/* los hijos recibirán este valor */}
+      {children}
+    </ThemeContext.Provider>
+  );
+};
 
 export const useThemeContext = () => {
-    const context = useContext(ThemeContext);
-    return context;
-}
+  const context = useContext(ThemeContext);
+  return context;
+};

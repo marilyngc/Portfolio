@@ -1,5 +1,6 @@
 import avatar from "../../../assets/avatar/avatar.png";
-import { BsFileEarmarkPersonFill } from "react-icons/bs";
+
+
 
 import { GiBullseye } from "react-icons/gi";
 import { MdCloudDownload } from "react-icons/md";

@@ -213,7 +213,7 @@ imageCard */
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
   background-position: center;
   background-repeat: repeat;
-  background-size: 100%;
+  background-size: 75%;
   background-color: rgb(26 26 26 / 1);
 
 
@@ -226,7 +226,7 @@ imageCard */
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
   background-position: center;
   background-repeat: repeat;
-  background-size: 90%;
+  background-size: 70%;
   background-color: rgb(255, 255, 255);
 
 
