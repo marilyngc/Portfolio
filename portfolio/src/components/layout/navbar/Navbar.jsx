@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useThemeContext } from "../../../context/ThemeContext";
+import { useThemeContext } from "@/context/ThemeContext";
 import DarkMode from "../../common/DarkMode/DarkMode";
 
 export const Navbar = () => {

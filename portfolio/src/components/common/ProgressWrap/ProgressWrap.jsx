@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { PiArrowUpLight } from "react-icons/pi";
+import "./progressWrap.scss";
+
 import 'font-awesome/css/font-awesome.css'; // Importa el CSS aquí
 
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useThemeContext } from "../../../context/ThemeContext";
+import { useThemeContext } from "@/context/ThemeContext";
 const DarkMode = () => {
     const { contextTheme, setContextTheme } = useThemeContext();
     // Almacenar el valor del contexto en una variable local

@@ -1,5 +1,7 @@
 
 import React from "react";
+import "./imageCard.scss";
+
 import { DataProyects } from "../../../data/MOCK_DATA.jsx";
 
 import { useThemeContext } from "../../../context/ThemeContext.jsx";

@@ -1,5 +1,5 @@
-import { SkillsInfo } from "../../../data/MOCK_DATA";
-import { useThemeContext } from "../../../context/ThemeContext";
+import { SkillsInfo } from "@/data/MOCK_DATA";
+import { useThemeContext } from "@/context/ThemeContext";
 
 
 export const Skills = () => {

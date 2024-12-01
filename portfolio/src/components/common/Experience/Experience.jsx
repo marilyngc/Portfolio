@@ -1,4 +1,4 @@
-import { useThemeContext } from "../../../context/ThemeContext.jsx";
+import { useThemeContext } from "@/context/ThemeContext.jsx";
 import { Card } from "../Card/Card.jsx";
 import { ImageCard } from "../ImageCard/ImageCard.jsx";
 

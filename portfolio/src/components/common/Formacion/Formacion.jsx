@@ -1,5 +1,5 @@
-import { useThemeContext } from "../../../context/ThemeContext";
-import { FormacionData } from "../../../data/MOCK_DATA";
+import { useThemeContext } from "@/context/ThemeContext";
+import { FormacionData } from "@/data/MOCK_DATA";
 export const Formacion = () => {
 
   const { contextTheme } = useThemeContext();

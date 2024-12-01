@@ -1,7 +1,7 @@
-import ecommerce from "../assets/skincare.png";
-import millonario from "../assets/menu_millonario.png";
+import ecommerce from "../assets/skincare.webp";
+import millonario from "../assets/menu_millonario.webp";
 
-import tictactou from "../assets/tictactou.png";
+import tictactou from "../assets/tictactou.webp";
 import react from "../assets//tools/react.svg";
 import javascript from "../assets//tools/javascript.svg";
 import sass from "../assets/tools/sass.svg";
@@ -11,7 +11,7 @@ import socket from "../assets/tools/socket.svg";
 import handlebars from "../assets/tools/handlebars.svg";
 import express from "../assets/tools/express.svg";
 import python from "../assets/tools/python.svg";
-import pygame from "../assets/tools/pygame.png";
+import pygame from "../assets/tools/pygame.webp";
 import node from "../assets/tools/node.svg";
 import discord from "../assets/tools/discord.svg";
 import { FaLinkedin, FaGithub } from "react-icons/fa6";

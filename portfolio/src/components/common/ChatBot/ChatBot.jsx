@@ -1,5 +1,5 @@
 import { useState,useRef ,useEffect } from "react";
-
+import "./chatbot.scss";
 
 export const ChatBot = () => {
   const [opend, setOpened] = useState(false);

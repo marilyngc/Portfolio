@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useThemeContext } from "../../../context/ThemeContext.jsx";
+import { useThemeContext } from "@/context/ThemeContext.jsx";
 const AboutMe = () => {
   const { contextTheme } = useThemeContext();
   const isDarkTheme = contextTheme === "dark";

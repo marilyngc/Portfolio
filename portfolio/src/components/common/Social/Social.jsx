@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import { SocialNetworks } from "../../../data/MOCK_DATA.jsx";
-import { useThemeContext } from "../../../context/ThemeContext.jsx";
+import { SocialNetworks } from "@/data/MOCK_DATA.jsx";
+import { useThemeContext } from "@/context/ThemeContext.jsx";
 
 export const Social = () => {
   const { contextTheme } = useThemeContext();

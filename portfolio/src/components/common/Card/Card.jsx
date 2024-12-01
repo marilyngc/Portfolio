@@ -1,7 +1,7 @@
-import { DataProyectNotImage } from "../../../data/MOCK_DATA";
+import { DataProyectNotImage } from "@/data/MOCK_DATA";
 import { HiOutlineArrowUpRight } from "react-icons/hi2";
 import React from "react";
-import { useThemeContext } from "../../../context/ThemeContext.jsx";
+import { useThemeContext } from "@/context/ThemeContext.jsx";
 export const Card = () => {
     const { contextTheme } = useThemeContext();
     // Almacenar el valor del contexto en una variable local

@@ -1,4 +1,5 @@
-import { useThemeContext } from "../../../context/ThemeContext";
+import { useThemeContext } from '@/context/ThemeContext';
+
 export const Trabajo = () => {
   const { contextTheme } = useThemeContext();
     // Almacenar el valor del contexto en una variable local

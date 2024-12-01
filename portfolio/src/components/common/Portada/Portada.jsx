@@ -1,4 +1,4 @@
-import avatar from "../../../assets/avatar/avatar.png";
+import avatar from "@/assets/avatar/avatar.webp";
 
 
 
