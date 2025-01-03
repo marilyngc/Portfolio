@@ -62,7 +62,7 @@ export const Formacion = () => {
                   <h4 className="text-cAccent font-bold mt-2 capitalize">
                   {item.titulo}
                   </h4>{" "}
-                  <p className="my-3 text-base font-normal text-cAccent text-pretty" 
+                  <p className="my-3 text-base font-normal text-cAccent text-pretty lg:w-2/3  " 
    dangerouslySetInnerHTML={{ __html: item.descripcion }} />
     
                           </div>{" "}
