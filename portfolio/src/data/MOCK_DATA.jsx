@@ -14,6 +14,8 @@ import python from "../assets/tools/python.svg";
 import pygame from "../assets/tools/pygame.webp";
 import node from "../assets/tools/node.svg";
 import discord from "../assets/tools/discord.svg";
+import mongoDB from "../assets/tools/mongodb.svg";
+import nextjs from "../assets/tools/nextjs.svg";
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
 
 export const DataProyects = [
@@ -102,6 +104,29 @@ export const DataProyects = [
 
 export const DataProyectNotImage = [
   {
+    title: "My Crypto Essecen 🟡",
+    description: "El proyecto estuvo basado en un dashboard de administración y usuario. Me encargué del backend, desarrollando CRUD, pagos con Stripe y wallets, validaciones, envíos de emails, seguimiento de envíos, whitelist y la creación de perfumes NFT.",
+    tools: [
+  
+      {
+        id: "nextJS",
+        src: nextjs,
+      },
+      {
+        id: "mongoDB",
+        src: mongoDB
+      },
+      {
+        id: "nodeJS",
+        src: node,
+      },
+     
+    ],
+
+    event: ["NodeJS", "MongoDB","NextJS"],
+    link: "https://my-crypto-essence.onrender.com",
+  },
+  {
     title: "Blockchain ⛓️",
     description: "Ejemplo practico de creación de un blockchain. La clase Block se crea cuando se mine. El minado lo que hace es conseguir un nuevo hash y una vez minado ese bloque, se agrega a la blockchain.",
     tools: [
@@ -111,12 +136,12 @@ export const DataProyectNotImage = [
       },
 
       {
-        id: "node",
+        id: "nodeJS",
         src: node,
       },
     ],
 
-    event: ["Node", "Javascript"],
+    event: ["NodeJS", "Javascript"],
     link: "https://github.com/marilyngc/YT-blockchain",
   },
   {

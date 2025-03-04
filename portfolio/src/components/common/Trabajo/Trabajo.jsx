@@ -1,10 +1,24 @@
 import { useThemeContext } from '@/context/ThemeContext';
+import { useState, useEffect } from "react";
 
 export const Trabajo = () => {
   const { contextTheme } = useThemeContext();
     // Almacenar el valor del contexto en una variable local
     const isDarkTheme = contextTheme === "dark";
+    const startMonth = 1; // Diciembre (0 = Enero, 11 = Diciembre)
+    const startYear = 2023; // Año de inicio
+    const [monthCount, setMonthCount] = useState(0);
   
+    useEffect(() => {
+      const today = new Date();
+      const currentMonth = today.getMonth();
+      const currentYear = today.getFullYear();
+  
+      // Calcula los meses transcurridos desde la fecha de inicio hasta hoy
+      const monthsPassed =   currentMonth  + 1;
+  
+      setMonthCount(monthsPassed);
+    }, []);
   return (
     <section className="mb-0 pt-8 max-w-6xl mx-auto lg:pt-20 ">
       {" "}
@@ -23,7 +37,7 @@ export const Trabajo = () => {
             <span className="absolute block w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-fuchsia-700  bg-fuchsia-700 "></span>{" "}
             <time className="text-sm font-normal leading-none text-cAccent capitalize">
               {" "}
-              Diciembre. 2024 - Presente · 1 Mes{" "}
+              Diciembre. 2024 - Presente · {monthCount} meses
             </time>{" "}
             <span className="text-sm mt-1 block font-normal leading-none text-cAccent capitalize">
               {" "}
@@ -71,7 +85,7 @@ export const Trabajo = () => {
             <span className="absolute block w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-fuchsia-700  bg-fuchsia-700 "></span>{" "}
             <time className="text-sm font-normal leading-none text-cAccent capitalize">
               {" "}
-              Diciembre. 2024 - Presente · 1 Mes{" "}
+              Diciembre. 2024 - Presente · {monthCount} meses
             </time>{" "}
             <span className="text-sm mt-1 block font-normal leading-none text-cAccent capitalize">
               {" "}
