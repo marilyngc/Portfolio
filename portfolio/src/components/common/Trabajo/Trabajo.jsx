@@ -5,19 +5,18 @@ export const Trabajo = () => {
   const { contextTheme } = useThemeContext();
     // Almacenar el valor del contexto en una variable local
     const isDarkTheme = contextTheme === "dark";
-    const startMonth = 1; // Diciembre (0 = Enero, 11 = Diciembre)
-    const startYear = 2023; // Año de inicio
+   
     const [monthCount, setMonthCount] = useState(0);
   
     useEffect(() => {
-      const today = new Date();
-      const currentMonth = today.getMonth();
-      const currentYear = today.getFullYear();
-  
-      // Calcula los meses transcurridos desde la fecha de inicio hasta hoy
-      const monthsPassed =   currentMonth  + 1;
-  
-      setMonthCount(monthsPassed);
+   const startDate = new Date("2025-08-01"); // fecha de inicio
+const today = new Date();
+
+const monthsPassed =
+  (today.getFullYear() - startDate.getFullYear()) * 12 +
+  (today.getMonth() - startDate.getMonth()) ; 
+
+setMonthCount(monthsPassed);
     }, []);
   return (
     <section className="mb-0 pt-8 max-w-6xl mx-auto lg:pt-20 ">
@@ -32,12 +31,73 @@ export const Trabajo = () => {
         {" "}
         <ol className="relative border-s border-neutral-500 md:border-cAccent ml-2 md:ml-3">
           {" "}
+
+            <li className="mb-10 ms-4">
+            {" "}
+            <span className="absolute block w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-fuchsia-700  bg-fuchsia-700 "></span>{" "}
+            <time className="text-sm font-normal leading-none text-cAccent capitalize">
+              {" "}
+              Agosto. 2025 - Presente · {monthCount} meses
+            </time>{" "}
+            <span className="text-sm mt-1 block font-normal leading-none text-cAccent capitalize">
+              {" "}
+              Buenos Aires, Argentina · Hibrido{" "}
+            </span>{" "}
+            <a
+              href="https://meetsuper.com"
+              target="_blank nofollow"
+              aria-label="Super"
+              className={`text-xl w-fit font-semibold hover:text-fuchsia-500 transition-all duration-150 ease-in  mt-2 capitalize group flex items-center gap-[6px]  ${
+                    isDarkTheme? `text-white`: `text-slate-600`
+                  }`}
+            >
+              {" "}
+              Super{""}
+              <span className="size-13 inline-block text-cAccent transition-all duration-150 ease-in group-hover:-translate-y-[1px] group-hover:translate-x-[1px] group-hover:text-fuchsia-500">
+                {" "}
+                <svg
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  xmlns="https://meetsuper.com"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M7 7h10v10"></path>
+                  <path d="M7 17 17 7"></path>
+                </svg>{}
+              </span>{" "}
+            </a>{" "}
+            <div className="first-of-type:mt-0 mt-5">
+              {" "}
+              <h4 className="text-cAccent font-bold mt-2 capitalize">
+              IT Analyst Developer
+              </h4>{" "}
+              <p className="my-3 text-base font-normal text-cAccent text-pretty lg:w-2/3  ">
+                {" "}
+Más de 6 automatizaciones en funcionamiento, organizadas en un HUB central de soluciones inteligentes que opera bajo 2 modalidades: uso interno, servicios para clientes, integrando herramientas propias y externas en un solo portal con el objetivo de optimizar procesos, reducir tiempos improductivos.
+
+
+
+</p>
+<p className="my-3 text-base font-normal text-cAccent text-pretty lg:w-2/3  ">
+Desarrollo e implementación de flujos automatizados con N8N, integrando Python, JavaScript y Google Cloud.
+
+</p>
+<p className="my-3 text-base font-normal text-cAccent text-pretty lg:w-2/3  ">
+Colaboro estrechamente con el equipo responsable del mantenimiento del HUB, asegurando que cada flujo esté disponible, actualizado y optimizado junto con otras automatizaciones desarrolladas internamente.
+
+</p>
+{" "}
+            </div>{" "}
+          </li>
           <li className="mb-10 ms-4">
             {" "}
             <span className="absolute block w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-fuchsia-700  bg-fuchsia-700 "></span>{" "}
             <time className="text-sm font-normal leading-none text-cAccent capitalize">
               {" "}
-              Diciembre. 2024 - Presente · {monthCount} meses
+              Diciembre. 2024 - Agosto 2025 · 8 meses
             </time>{" "}
             <span className="text-sm mt-1 block font-normal leading-none text-cAccent capitalize">
               {" "}
@@ -76,23 +136,30 @@ export const Trabajo = () => {
               </h4>{" "}
               <p className="my-3 text-base font-normal text-cAccent text-pretty lg:w-2/3  ">
                 {" "}
-                Actualmente, me encargo de crear y actualizar reportes en un dashboard interactivo, proporcionando a los clientes información  y visualizaciones para la toma de decisiones.
-              </p>{" "}
-            </div>{" "}
+Excel y Google Sheets: Manejo avanzado para combinar y manipular datos con precisión.
+
+
+           
+           
+
+<p className="my-3 text-base font-normal text-cAccent text-pretty lg:w-2/3  ">
+Automatización de procesos en el área de influencers mediante el desarrollo de soluciones en Python con tecnologías OCR, utilizando las APIs de Google y Azure, logrando la mejora de tiempos operativos y la reducción de tareas manuales.              </p>{" "}
+
+</p> </div>{" "}
           </li>
           <li className="mb-10 ms-4">
             {" "}
             <span className="absolute block w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-fuchsia-700  bg-fuchsia-700 "></span>{" "}
             <time className="text-sm font-normal leading-none text-cAccent capitalize">
               {" "}
-              Diciembre. 2024 - Presente · {monthCount} meses
+              Diciembre. 2024 - Diciembre 2025 · 12 meses
             </time>{" "}
             <span className="text-sm mt-1 block font-normal leading-none text-cAccent capitalize">
               {" "}
               Santiago de Chile, Chile · Remoto{" "}
             </span>{" "}
             <a
-              href="https://labs.granmenu.me"
+              href="https://www.keroke.ro"
               target="_blank nofollow"
               aria-label="Gran Menú"
               className={`text-xl w-fit font-semibold hover:text-fuchsia-500 transition-all duration-150 ease-in  mt-2 capitalize group flex items-center gap-[6px]  ${
@@ -100,13 +167,13 @@ export const Trabajo = () => {
                   }`}
             >
               {" "}
-              Gran Menú{""}
+              KeroKero{""}
               <span className="size-13 inline-block text-cAccent transition-all duration-150 ease-in group-hover:-translate-y-[1px] group-hover:translate-x-[1px] group-hover:text-fuchsia-500">
                 {" "}
                 <svg
                   stroke="currentColor"
                   strokeWidth="1.5"
-                  xmlns="https://labs.granmenu.me"
+                  xmlns="https://www.keroke.ro"
                   viewBox="0 0 24 24"
                   fill="none"
                   strokeLinecap="round"
@@ -124,58 +191,11 @@ export const Trabajo = () => {
               </h4>{" "}
               <p className="my-3 text-base font-normal text-cAccent text-pretty lg:w-2/3  ">
                 {" "}
-                Trabajo freelancer, actualmente desarrollo el backend que gestiona compras, generación de NFTs, QR, autenticación basada en NFTs, además de configurar la base de datos en MongoDB. Documentar y explicar los endpoints al equipo frontend para facilitar la integración.{" "}
+                Trabajo freelancer,  Desarrollo de un sistema e-commerce completo, con autenticación e integración de la pasarela de pago Stripe. El backend fue desarrollado en Node.js, utilizando MongoDB como base de datos principal.{" "}
               </p>{" "}
             </div>{" "}
           </li>
-          <li className="mb-10 ms-4">
-            {" "}
-            <span className="absolute block w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-fuchsia-700  bg-fuchsia-700 "></span>{" "}
-            <time className="text-sm font-normal leading-none text-cAccent capitalize">
-              {" "}
-              Noviembre. 2024   -  2 Meses{" "}
-            </time>{" "}
-            <span className="text-sm mt-1 block font-normal leading-none text-cAccent capitalize">
-              {" "}
-              Buenos Aires, Argentina · Remoto{" "}
-            </span>{" "}
-            <a
-              href="https://www.wearezeaze.com"
-              target="_blank nofollow"
-              aria-label="Zeaze"
-              className={`text-xl w-fit font-semibold hover:text-fuchsia-500 transition-all duration-150 ease-in  mt-2 capitalize group flex items-center gap-[6px]  ${
-                    isDarkTheme? `text-white`: `text-slate-600`
-                  }`}
-            >
-              {" "}
-              Zeaze{""}
-              <span className="size-13 inline-block text-cAccent transition-all duration-150 ease-in group-hover:-translate-y-[1px] group-hover:translate-x-[1px] group-hover:text-fuchsia-500">
-                {" "}
-                <svg
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M7 7h10v10"></path>
-                  <path d="M7 17 17 7"></path>
-                </svg>{}
-              </span>{" "}
-            </a>{" "}
-            <div className="first-of-type:mt-0 mt-5">
-              {" "}
-              <h4 className="text-cAccent font-bold mt-2 capitalize">
-                Desarrolladora Frontend
-              </h4>{" "}
-              <p className="my-3 text-base font-normal text-cAccent text-pretty lg:w-2/3  ">
-                {" "}
-                Trabajo como freelancer, creando interfaces de usuario y funcionales con HTML, CSS, JavaScript y React. Colaboro con el equipo de diseño. Mi objetivo es desarrollar aplicaciones web responsivas y centradas en el usuario.{" "}
-              </p>{" "}
-            </div>{" "}
-          </li>
+        
         
         </ol>{" "}
       </article>{" "}

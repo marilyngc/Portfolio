@@ -1,22 +1,14 @@
 import ecommerce from "../assets/skincare.webp";
 import millonario from "../assets/menu_millonario.webp";
-
+import n8n from "../assets/n8n-color.svg";
 import tictactou from "../assets/tictactou.webp";
-import react from "../assets//tools/react.svg";
-import javascript from "../assets//tools/javascript.svg";
-import sass from "../assets/tools/sass.svg";
-import bootstrap from "../assets/tools/bootstrap.svg";
-import firebase from "../assets/tools/firebase.svg";
-import socket from "../assets/tools/socket.svg";
-import handlebars from "../assets/tools/handlebars.svg";
-import express from "../assets/tools/express.svg";
 import python from "../assets/tools/python.svg";
-import pygame from "../assets/tools/pygame.webp";
 import node from "../assets/tools/node.svg";
 import discord from "../assets/tools/discord.svg";
 import mongoDB from "../assets/tools/mongodb.svg";
 import nextjs from "../assets/tools/nextjs.svg";
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
+import candado from "../assets/candado.png";
 
 export const DataProyects = [
   {
@@ -24,17 +16,8 @@ export const DataProyects = [
     title: "¿Quién quiere ser millonario?",
     description:
       "Juego de trivia basado en el programa de televisión, creado usando programación algorítmica y POO Los jugadores responden preguntas progresivas y utilizan categorías y comodines. El sistema verifica las respuestas y calcula las ganancias, actualizando la interfaz en tiempo real.",
-    tools: [
-      {
-        id: "python",
-        src: python,
-      },
-      {
-        id: "pygame",
-        src: pygame,
-      },
-    ],
-    event: ["Pygame", "Python"],
+  
+    event: ["Python", "Pygame"],
     linkLive: "https://www.youtube.com/watch?v=Sey38ziXK74",
     linkCode: "https://github.com/marilyngc/Quien_quiere_ser_millonario_juego",
   },
@@ -42,26 +25,8 @@ export const DataProyects = [
     img: tictactou,
     title: "Tic Tac Toe",
     description: "Juego en tiempo real usando Socket.IO, que conecta a dos jugadores y sincroniza sus movimientos al instante. El juego comienza automáticamente al emparejar usuarios conectados. Recuerda, ¡el juego está pensado para dos jugadores, así que invita a alguien a unirse a la diversión!",
-    tools: [
-      {
-        id: "javascript",
-        src: javascript,
-      },
-      {
-        id: "node",
-        src: node
-      },
-      {
-        id: "socket",
-        src: socket,
-      },
-      {
-        id: "express",
-        src: express,
-      },
   
-    ],
-    event: [ "Socket", "Express", "Javascript","Node"],
+    event: [ "Javascript","Node.js", "Socket", "Express", ],
     linkLive: "https://realtime-tictactoe-ujnb.onrender.com",
     linkCode: "https://github.com/marilyngc/RealTime-TicTacToe",
 
@@ -72,31 +37,8 @@ export const DataProyects = [
     title: "E-commerce",
     description:
       "Proyecto final realizado en CoderHouse quedando en el TOP 10 de la comisión. Donde los usuarios pueden filtrar productos, añadirlos al carrito, eliminar elementos y ajustar las cantidades según sus preferencias. Al finalizar la compra, el usuario envía los detalles a la base de datos de Firebase para su procesamiento.",
-    tools: [
-      {
-        id: "react",
-        src: react,
-      },
-      {
-        id: "javascript",
-        src: javascript,
-      },
-
-      {
-        id: "firebase",
-        src: firebase,
-      },
-
-      {
-        id: "bootstrap",
-        src: bootstrap,
-      },
-      {
-        id: "sass",
-        src: sass,
-      },
-    ],
-    event: ["Sass", "Javascript", "React", "Firebase", "Bootstrap"],
+   
+    event: ["React", "Sass", "Bootstrap",   "Firebase","JWT"],
     linkLive: "https://ecommerce-marilyngcs-projects.vercel.app",
     linkCode: "https://github.com/marilyngc/Ecommerce?tab=readme-ov-file",
   },
@@ -106,42 +48,17 @@ export const DataProyectNotImage = [
   {
     title: "My Crypto Essecen 🟡",
     description: "El proyecto estuvo basado en un dashboard de administración y usuario. Me encargué del backend, desarrollando CRUD, pagos con Stripe y wallets, validaciones, envíos de emails, seguimiento de envíos, whitelist y la creación de perfumes NFT.",
-    tools: [
-  
-      {
-        id: "nextJS",
-        src: nextjs,
-      },
-      {
-        id: "mongoDB",
-        src: mongoDB
-      },
-      {
-        id: "nodeJS",
-        src: node,
-      },
-     
-    ],
+   
 
-    event: ["NodeJS", "MongoDB","NextJS"],
+    event: ["Node.js", "MongoDB","Next.js","Socket.io"],
     link: "https://my-crypto-essence.onrender.com",
   },
   {
     title: "Blockchain ⛓️",
     description: "Ejemplo practico de creación de un blockchain. La clase Block se crea cuando se mine. El minado lo que hace es conseguir un nuevo hash y una vez minado ese bloque, se agrega a la blockchain.",
-    tools: [
-      {
-        id: "javascript",
-        src: javascript,
-      },
+   
 
-      {
-        id: "nodeJS",
-        src: node,
-      },
-    ],
-
-    event: ["NodeJS", "Javascript"],
+    event: ["Node.js", "Javascript"],
     link: "https://github.com/marilyngc/YT-blockchain",
   },
   {
@@ -167,25 +84,8 @@ export const DataProyectNotImage = [
     img: null,
     title: "Chat Server",
     description: "Un ejemplo mínimo de programación para un servidor de chat.",
-    tools: [
-      {
-        id: "javascript",
-        src: javascript,
-      },
-      {
-        id: "handlebars",
-        src: handlebars,
-      },
-      {
-        id: "socket",
-        src: socket,
-      },
-      {
-        id: "express",
-        src: express,
-      },
-    ],
-    event: ["Handlebars", "Socket", "Express", "Javascript"],
+
+    event: ["Handlebars", "Socket.io", "Express", "Javascript"],
     link: "https://github.com/marilyngc/Chat",
   },
   {
@@ -584,164 +484,7 @@ export const SkillsInfo = [
       </svg>
     ),
   },
-  {
-    name: "Figma",
-    url: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        width="60"
-        height="60"
-        viewBox="0 0 100 100"
-      >
-        <path
-          fill="#52bea0"
-          d="M39,88.649L39,88.649c-7.18,0-13-5.82-13-13l0,0c0-7.18,5.82-13,13-13h13v13 C52,82.829,46.18,88.649,39,88.649z"
-        ></path>
-        <path
-          fill="#f599a0"
-          d="M65.5,37.649H52v-25h13.5c6.904,0,12.5,5.596,12.5,12.5l0,0C78,32.052,72.404,37.649,65.5,37.649z"
-        ></path>
-        <path
-          fill="#e85654"
-          d="M38.5,12.649H52v25H38.5c-6.904,0-12.5-5.596-12.5-12.5l0,0C26,18.245,31.596,12.649,38.5,12.649z"
-        ></path>
-        <path
-          fill="#787ab5"
-          d="M38.5,37.649H52v25H38.5c-6.904,0-12.5-5.596-12.5-12.5l0,0C26,43.245,31.596,37.649,38.5,37.649z"
-        ></path>
-        <circle cx="65.5" cy="51.149" r="11.5" fill="#39c1d7"></circle>
-        <path
-          fill="none"
-          stroke="#1f212b"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeMiterlimit="10" 
-          strokeWidth="2"
-          d="M39,88.649L39,88.649c-7.18,0-13-5.82-13-13l0,0c0-7.18,5.82-13,13-13h13v13C52,82.829,46.18,88.649,39,88.649z"
-        ></path>
-        <path
-          fill="none"
-          stroke="#1f212b"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeMiterlimit="10" 
-          d="M42.5,83.397 c-1.067,0.483-2.252,0.752-3.5,0.752l0,0c-4.694,0-8.5-3.806-8.5-8.5l0,0"
-        ></path>
-        <path
-          fill="none"
-          stroke="#1f212b"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeMiterlimit="10" 
-          d="M46.212,80.149 c-0.34,0.544-0.741,1.047-1.192,1.5"
-        ></path>
-        <path
-          fill="none"
-          stroke="#1f212b"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeMiterlimit="10" 
-          d="M47.5,72.149v3.5 c0,0.512-0.045,1.013-0.132,1.5"
-        ></path>
-        <path
-          fill="none"
-          stroke="#1f212b"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeMiterlimit="10" 
-          d="M47.5,67.149v2"
-        ></path>
-        <path
-          fill="none"
-          stroke="#1f212b"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeMiterlimit="10" 
-          strokeWidth="2"
-          d="M65.5,37.649H52v-25h13.5c6.904,0,12.5,5.596,12.5,12.5l0,0C78,32.052,72.404,37.649,65.5,37.649z"
-        ></path>
-        <path
-          fill="none"
-          stroke="#1f212b"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeMiterlimit="10" 
-          d="M65.5,17.149 c4.418,0,8,3.582,8,8l0,0"
-        ></path>
-        <path
-          fill="none"
-          stroke="#1f212b"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeMiterlimit="10" 
-          d="M56.86,17.149h5.64"
-        ></path>
-        <path
-          fill="none"
-          stroke="#1f212b"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeMiterlimit="10" 
-          strokeWidth="2"
-          d="M38.5,12.649H52v25H38.5c-6.904,0-12.5-5.596-12.5-12.5l0,0C26,18.245,31.596,12.649,38.5,12.649z"
-        ></path>
-        <path
-          fill="none"
-          stroke="#1f212b"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeMiterlimit="10" 
-          strokeWidth="2"
-          d="M38.5,37.649H52v25H38.5c-6.904,0-12.5-5.596-12.5-12.5l0,0C26,43.245,31.596,37.649,38.5,37.649z"
-        ></path>
-        <circle
-          cx="65.5"
-          cy="51.149"
-          r="11.5"
-          fill="none"
-          stroke="#1f212b"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeMiterlimit="10" 
-          strokeWidth="2"
-        ></circle>
-        <path
-          fill="none"
-          stroke="#1f212b"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeMiterlimit="10" 
-          d="M60.138,46.649 c1.284-1.528,3.21-2.5,5.362-2.5"
-        ></path>
-        <path
-          fill="none"
-          stroke="#1f212b"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeMiterlimit="10" 
-          d="M59.174,54.149 c-0.432-0.909-0.674-1.926-0.674-3"
-        ></path>
-        <path
-          fill="none"
-          stroke="#1f212b"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeMiterlimit="10" 
-          d="M70.862,55.649 c-1.284,1.528-3.21,2.5-5.362,2.5c-1.074,0-2.091-0.242-3-0.674"
-        ></path>
-        <path
-          fill="none"
-          stroke="#1f212b"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeMiterlimit="10" 
-          d="M72.5,51.149 c0,0.695-0.101,1.366-0.29,2"
-        ></path>
-      </svg>
-    ),
-  },
+ 
 
   {
     name: "Firebase",
@@ -1010,4 +753,58 @@ export const SkillsInfo = [
     url: (<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="#85ea2d" d="M63.999 124.945c-33.607 0-60.95-27.34-60.95-60.949C3.05 30.388 30.392 3.048 64 3.048s60.95 27.342 60.95 60.95c0 33.607-27.343 60.946-60.95 60.946z"/><path fill="#173647" d="M40.3 43.311c-.198 2.19.072 4.454-.073 6.668-.173 2.217-.444 4.407-.888 6.596-.615 3.126-2.56 5.489-5.24 7.458 5.218 3.396 5.807 8.662 6.152 14.003.172 2.88.098 5.785.394 8.638.221 2.215 1.082 2.782 3.372 2.854.935.025 1.894 0 2.978 0v6.842c-6.768 1.156-12.354-.762-13.734-6.496a39.329 39.329 0 0 1-.836-6.4c-.148-2.287.097-4.577-.074-6.864-.492-6.277-1.305-8.393-7.308-8.689v-7.8c.441-.1.86-.174 1.302-.223 3.298-.172 4.701-1.182 5.414-4.43a37.512 37.512 0 0 0 .616-5.536c.247-3.569.148-7.21.763-10.754.86-5.094 4.01-7.556 9.254-7.852 1.476-.074 2.978 0 4.676 0v6.99c-.714.05-1.33.147-1.969.147-4.258-.148-4.48 1.304-4.8 4.848zm8.195 16.193h-.099c-2.462-.123-4.578 1.796-4.702 4.258-.122 2.485 1.797 4.603 4.259 4.724h.295c2.436.148 4.527-1.724 4.676-4.16v-.245c.05-2.486-1.944-4.527-4.43-4.577zm15.43 0c-2.386-.074-4.38 1.796-4.454 4.159 0 .149 0 .271.024.418 0 2.684 1.821 4.406 4.578 4.406 2.707 0 4.406-1.772 4.406-4.553-.025-2.682-1.823-4.455-4.554-4.43Zm15.801 0a4.596 4.596 0 0 0-4.676 4.454 4.515 4.515 0 0 0 4.528 4.528h.05c2.264.394 4.553-1.796 4.701-4.429.122-2.437-2.092-4.553-4.604-4.553Zm21.682.369c-2.855-.123-4.284-1.083-4.996-3.79a27.444 27.444 0 0 1-.811-5.292c-.198-3.298-.174-6.62-.395-9.918-.516-7.826-6.177-10.557-14.397-9.205v6.792c1.304 0 2.313 0 3.322.025 1.748.024 3.077.69 3.249 2.634.172 1.772.172 3.568.344 5.365.346 3.57.542 7.187 1.157 10.706.542 2.904 2.536 5.07 5.02 6.841-4.355 2.929-5.636 7.113-5.857 11.814-.122 3.223-.196 6.472-.368 9.721-.148 2.953-1.181 3.913-4.16 3.987-.835.024-1.648.098-2.583.148v6.964c1.748 0 3.347.1 4.946 0 4.971-.295 7.974-2.706 8.96-7.531.417-2.658.662-5.34.737-8.023.171-2.46.148-4.946.394-7.382.369-3.815 2.116-5.389 5.93-5.636a5.161 5.161 0 0 0 1.06-.245v-7.801c-.64-.074-1.084-.148-1.552-.173zM64 6.1c31.977 0 57.9 25.92 57.9 57.898 0 31.977-25.923 57.899-57.9 57.899-31.976 0-57.898-25.922-57.898-57.9C6.102 32.023 32.024 6.101 64 6.101m0-6.1C28.71 0 0 28.71 0 64c0 35.288 28.71 63.998 64 63.998 35.289 0 64-28.71 64-64S99.289.002 64 .002Z"/></svg>
 ),
   },
+];
+
+
+
+export const AutomationList = [
+  {
+    img: "OC Manager",// reemplaza con tu imagen
+    subTitle: "Sistema de Control Financiero",
+    description: "Este sistema está orientado al control financiero de las órdenes de compra. Los equipos cargan los documentos correspondientes mediante un formulario; una vez enviados, los datos se integran automáticamente en un flujo de trabajo gestionado por n8n, que extrae la información relevante y la organiza en un Excel. Además, de forma periódica, se envían notificaciones por correo electrónico a los usuarios, recordándoles las órdenes de compra pendientes de reclamar con los clientes.",
+    iconTools: n8n,
+    event: "N8N",
+    icon: candado,
+    statusIcon: "Proyecto Privado"
+  },
+  {
+    img: "OC Manager", // reemplaza con tu imagen
+    subTitle: "Sistema de Gestión de Entregables y Estructura de Carpetas",
+    description: "Este sistema automatiza la creación y seguimiento de entregables. Los equipos solicitan la creación de carpetas en Google Drive mediante un formulario, y n8n genera la estructura y entrega un Excel con los enlaces organizados. Los equipos cargan los archivos en las carpetas correspondientes, y el sistema realiza un conteo diario, registrando automáticamente los datos en un Excel por fecha y entregable, facilitando el seguimiento y control de cada entrega.",
+    iconTools: n8n,
+    event: "N8N",
+    icon: candado,
+    statusIcon: "Proyecto Privado"
+  },
+
+  {
+    img: "OC Manager",
+    subTitle: "Sistema para captura y organización de métricas de influencers",
+    description: "Este sistema, desarrollado en Python y alojado en Azure, permite a los equipos cargar imágenes con métricas e información de influencers. Utilizando OCR y traductor de texto, el sistema extrae automáticamente los datos y los organiza en un Excel, facilitando el análisis y seguimiento de las métricas.",
+    iconTools: python,
+    event: "Python",
+    icon: candado,
+    statusIcon: "Proyecto Privado"
+  },
+  
+
+  {
+    img: "OC Manager",
+    subTitle: "Generador automático de briefs",
+    description: "Los equipos completan un formulario cargando todos los archivos disponibles para elaborar un brief. El formulario es procesado mediante n8n y un LLM, que genera automáticamente un brief completo y adaptado al área seleccionada, proporcionando información relevante y útil para el equipo.",
+    iconTools: n8n,
+    event: "N8N",
+    icon: candado,
+    statusIcon: "Proyecto Privado"
+  },
+  {
+    img: "OC Manager",
+    subTitle: "Revisión de piezas publicitarias",
+    description: "Este sistema permite que los equipos carguen, mediante un formulario, piezas publicitarias junto con su versión aprobada. n8n procesa los archivos y un LLM genera automáticamente un reporte final indicando los errores encontrados y cuáles piezas están correctas. El flujo facilita la revisión de las piezas publicitarias, detectando problemas como texto faltante, logos desalineados o cualquier error de diseño, asegurando que solo las piezas correctas se publiquen.",
+    iconTools: n8n,
+    event: "N8N",
+    icon: candado,
+    statusIcon: "Proyecto Privado"
+  },
+ 
 ];

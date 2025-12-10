@@ -12,36 +12,34 @@ import { Skills } from "../common/Skills/Skills.jsx";
 import { Formacion } from "../common/Formacion/Formacion.jsx";
 import { Portada } from "../common/Portada/Portada.jsx";
 import AboutMe from "../common/AboutMe/AboutMe.jsx";
+import Automation from "../common/Automation/Automation.jsx";
 
 export const Home = () => {
   const { contextTheme, setContextTheme } = useThemeContext();
   return (
-  
-      <div id={contextTheme}>
-      
-   
-        <header className="scroll-animation hidden lg:block full p-2 fixed top-0 left-0 right-0 z-[9999]">
-          <Navbar />
-        </header>
+    <div id={contextTheme}>
+      <header className="scroll-animation hidden lg:block full p-2 fixed top-0 left-0 right-0 z-[9999]">
+        <Navbar />
+      </header>
 
-        <main className="w-full px-2 z-0">
-          <Portada />
-         
-          <Cursor />
+      <main className="w-full px-2 z-0">
+        <Portada />
 
-          <Trabajo />
-          <Formacion />
-          <Experince />
-          <ChatBot />
-          <ProgressWrap />
-          <Skills />
-          <AboutMe/>
-          <Social />
-         
-        </main>
-       
-        <Footer />
-      </div>
-   
+        <Cursor />
+        <AboutMe />
+
+        <Experince />
+        <ChatBot />
+        <ProgressWrap />
+        <Trabajo />
+        <Formacion />
+        <Skills />
+
+        <Automation />
+        <Social />
+      </main>
+
+      <Footer />
+    </div>
   );
 };

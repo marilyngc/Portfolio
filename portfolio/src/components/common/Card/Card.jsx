@@ -3,39 +3,39 @@ import { HiOutlineArrowUpRight } from "react-icons/hi2";
 import React from "react";
 import { useThemeContext } from "@/context/ThemeContext.jsx";
 export const Card = () => {
-    const { contextTheme } = useThemeContext();
-    // Almacenar el valor del contexto en una variable local
-    const isDarkTheme = contextTheme === "dark";
-    return(
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-5">
-        {DataProyectNotImage.map((proyect, index) => (
-          <React.Fragment key={index}>
-            <a
-              href={proyect.link}
-              target="_blank"
-              rel="noreferrer"
-              className={`block group border-2   rounded-xl shadow_translate-transition hover:sm:shadow sm:hover:-translate-y-1 ${
-                isDarkTheme
-                  ? `dark:border-gray-700 dark:hover:border-gray-300/30`
-                  : ` border-gray-400 hover:border-gray-500`
-              }`}
-            >
-              <article className="relative flex flex-col justify-between w-full py-6 px-7">
-                <h2
-                  className={`  text-lg font-bold ${
-                    isDarkTheme ? `dark:text-gray-200` : `text-gray-700`
-                  }`}
-                >
-                  {proyect.title}
-                </h2>
-                <p
+  const { contextTheme } = useThemeContext();
+  // Almacenar el valor del contexto en una variable local
+  const isDarkTheme = contextTheme === "dark";
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-5">
+      {DataProyectNotImage.map((proyect, index) => (
+        <React.Fragment key={index}>
+          <a
+            href={proyect.link}
+            target="_blank"
+            rel="noreferrer"
+            className={`block group border-2   rounded-xl shadow_translate-transition hover:sm:shadow sm:hover:-translate-y-1 ${
+              isDarkTheme
+                ? `dark:border-gray-700 dark:hover:border-gray-300/30`
+                : ` border-gray-400 hover:border-gray-500`
+            }`}
+          >
+            <article className="relative flex flex-col justify-between w-full py-6 px-7">
+              <h2
+                className={`  text-lg font-bold ${
+                  isDarkTheme ? `dark:text-gray-200` : `text-gray-700`
+                }`}
+              >
+                {proyect.title}
+              </h2>
+              <p
                 className={`  font-normal text-cAccent text-pretty ${
                   isDarkTheme ? `text-base ` : `text-base  `
                 }`}
-                >
-                  {proyect.description}
-                </p>
-                <div className="flex gap-1 mt-1.5 items-center">
+              >
+                {proyect.description}
+              </p>
+              {/* <div className="flex gap-1 mt-1.5 items-center">
                   {proyect.tools.map((tool, index) => (
                     <div key={index} className="relative group/tooltip">
                       <img
@@ -65,15 +65,35 @@ export const Card = () => {
                       })}
                     </div>
                   ))}
-                </div>
+                </div> */}
 
-                <div className="absolute grid place-items-center right-3 top-3 bg-white dark:bg-gray-800 w-9 h-9 rounded-full scale-0 group-hover:scale-90 transition-transform dark:opacity-80 border-0 border-slate-100 border-indigo-100/50 dark:border-slate-200/20 shadow-sm">
-                  <HiOutlineArrowUpRight className=" text-gray-400 dark:text-gray-50 text-2xl" />
+              <footer class="dark:text-cWhite flex items-center justify-between mt-3">
+                <div class="flex items-center gap-2 flex-wrap">
+                  {proyect.event.map((eventItem, index) => (
+                    <p
+                      key={index}
+                      className={`
+      border rounded-md px-2 py-1 font-mono text-xs truncate
+      ${
+        isDarkTheme
+          ? "border-neutral-800 bg-neutral-900 text-cWhite"
+          : "border-neutral-300 bg-neutral-200/30 text-black"
+      }
+    `}
+                      title={eventItem}
+                    >
+                      {eventItem}
+                    </p>
+                  ))}
                 </div>
-              </article>
-            </a>
-          </React.Fragment>
-        ))}
-      </div>
-    )
-}
+              </footer>
+              <div className="absolute grid place-items-center right-3 top-3 bg-white dark:bg-gray-800 w-9 h-9 rounded-full scale-0 group-hover:scale-90 transition-transform dark:opacity-80 border-0 border-slate-100 border-indigo-100/50 dark:border-slate-200/20 shadow-sm">
+                <HiOutlineArrowUpRight className=" text-gray-400 dark:text-gray-50 text-2xl" />
+              </div>
+            </article>
+          </a>
+        </React.Fragment>
+      ))}
+    </div>
+  );
+};

@@ -20,15 +20,16 @@ export function CopyData({ data, isDarkTheme }) {
     }`}
   >
     <IoCopyOutline className="i-fa-pro:file-user text-xl sm:text-lg z-auto" />
-    <span
-      className={`absolute pointer-events-none transition-all opacity-0 z-20 bottom-full -translate-y-0 py-1 px-1.5 text-xs left-1/2 -translate-x-1/2 rounded-md whitespace-nowrap before:content-[''] before:absolute before:rounded-sm before:w-2.5 before:rotate-45 before:h-2.5 before:-bottom-1 before:-z-10 before:left-1/2 before:-translate-x-1/2 group-hover:opacity-100 group-hover:-translate-y-3 ${
-        isDarkTheme
-          ? `dark:bg-white dark:text-gray-700 before:dark:bg-white`
-          : `before:bg-gray-800 text-gray-200 bg-gray-800`
-      }`}
-    >
-      Copiar Email 
-    </span>
+    <div
+                      className={`
+                        duration-150 transition-all inline-block 2xl:left-[104%] 2xl:right-auto absolute border rounded-md px-2 py-1 right-[107%] shadow-sm text-sm w-max z-10
+                        ${isDarkTheme ? "border-neutral-800 bg-[#1a1a1a] text-white" : "border-neutral-300 bg-neutral-200/30 text-black"}
+                        group-hover:opacity-100 group-hover:visible invisible opacity-0 pointer-events-none
+                      `}
+                      role="tooltip"
+                    >
+                      Copiar email
+                    </div>
     <span id="urlEmail" className="m-0">
       {copied ? "Copiado!" : data}
     </span>
