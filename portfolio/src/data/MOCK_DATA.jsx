@@ -1,16 +1,25 @@
-import ecommerce from "../assets/skincare.webp";
+
+import myCrypto from "../assets/myCryptoEssence.jpeg";
 import millonario from "../assets/menu_millonario.webp";
 import n8n from "../assets/n8n-color.svg";
 import tictactou from "../assets/tictactou.webp";
 import python from "../assets/tools/python.svg";
-import node from "../assets/tools/node.svg";
+
 import discord from "../assets/tools/discord.svg";
-import mongoDB from "../assets/tools/mongodb.svg";
-import nextjs from "../assets/tools/nextjs.svg";
+
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
 import candado from "../assets/candado.png";
 
 export const DataProyects = [
+  {
+    img: myCrypto,
+    title: "My Crypto Essecen",
+    description:
+"El proyecto estuvo basado en un dashboard de administración y usuario. Me encargué del backend, desarrollando CRUD, pagos con Stripe y wallets, validaciones, envíos de emails, seguimiento de envíos, whitelist y la creación de perfumes NFT.",   
+    event: ["Node.js", "MongoDB","Next.js","Socket.io"],
+    linkLive: "https://mycryptoessence.com",
+    linkCode: "/",
+  },
   {
     img: millonario,
     title: "¿Quién quiere ser millonario?",
@@ -32,26 +41,18 @@ export const DataProyects = [
 
   },
 
-  {
-    img: ecommerce,
-    title: "E-commerce",
-    description:
-      "Proyecto final realizado en CoderHouse quedando en el TOP 10 de la comisión. Donde los usuarios pueden filtrar productos, añadirlos al carrito, eliminar elementos y ajustar las cantidades según sus preferencias. Al finalizar la compra, el usuario envía los detalles a la base de datos de Firebase para su procesamiento.",
+
+
    
-    event: ["React", "Sass", "Bootstrap",   "Firebase","JWT"],
-    linkLive: "https://ecommerce-marilyngcs-projects.vercel.app",
-    linkCode: "https://github.com/marilyngc/Ecommerce?tab=readme-ov-file",
-  },
 ];
 
 export const DataProyectNotImage = [
   {
-    title: "My Crypto Essecen 🟡",
-    description: "El proyecto estuvo basado en un dashboard de administración y usuario. Me encargué del backend, desarrollando CRUD, pagos con Stripe y wallets, validaciones, envíos de emails, seguimiento de envíos, whitelist y la creación de perfumes NFT.",
-   
+    title: "E-commerce",
+    description: "Proyecto final realizado en CoderHouse quedando en el TOP 10 de la comisión. Donde los usuarios pueden filtrar productos, añadirlos al carrito, eliminar elementos y ajustar las cantidades según sus preferencias. Al finalizar la compra, el usuario envía los detalles a la base de datos de Firebase para su procesamiento.",
 
-    event: ["Node.js", "MongoDB","Next.js","Socket.io"],
-    link: "https://my-crypto-essence.onrender.com",
+    event: ["React", "Sass", "Bootstrap",   "Firebase","JWT"],
+    link: "https://ecommerce-marilyngcs-projects.vercel.app"
   },
   {
     title: "Blockchain ⛓️",
@@ -147,25 +148,7 @@ export const FormacionData = [
 ]
 
 export const SkillsInfo = [
-  {
-    name: "JavaScript",
-    url: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        width="60"
-        height="60"
-        viewBox="0 0 48 48"
-      >
-        <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
-        <path
-          fill="#000001"
-          d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"
-        ></path>
-      </svg>
-    ),
-  },
+
   {
     name: "React",
     url: (
@@ -378,60 +361,7 @@ export const SkillsInfo = [
       </svg>
     ),
   },
-  {
-    name: "Boostrap",
-    url: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        width="60"
-        height="60"
-        viewBox="0 0 100 100"
-      >
-        <path
-          fill="#6666a4"
-          d="M19.681,27.103C19.534,22.887,22.818,19,27.258,19h45.49c4.439,0,7.724,3.887,7.577,8.103 c-0.141,4.049,0.042,9.295,1.362,13.572c1.324,4.29,3.558,7.002,7.215,7.35v3.951c-3.658,0.348-5.891,3.06-7.215,7.35 c-1.32,4.277-1.503,9.522-1.362,13.572C80.471,77.113,77.187,81,72.748,81h-45.49c-4.439,0-7.724-3.887-7.577-8.102 c0.141-4.049-0.042-9.295-1.362-13.572c-1.324-4.29-3.563-7.002-7.221-7.35v-3.951c3.658-0.348,5.896-3.06,7.221-7.35 C19.639,36.397,19.822,31.152,19.681,27.103z"
-        ></path>
-        <path
-          fill="#1f212b"
-          d="M72.748,82h-45.49c-2.291,0-4.441-0.921-6.056-2.593c-1.687-1.745-2.604-4.13-2.521-6.545 c0.128-3.676,0.004-8.957-1.318-13.241c-1.294-4.19-3.374-6.365-6.36-6.65c-0.514-0.049-0.905-0.479-0.905-0.995v-3.951 c0-0.516,0.392-0.946,0.905-0.995c2.986-0.285,5.066-2.46,6.36-6.65c1.322-4.284,1.446-9.565,1.318-13.241l0,0 c-0.084-2.415,0.834-4.8,2.521-6.545C22.816,18.921,24.967,18,27.258,18h45.49c2.291,0,4.442,0.921,6.057,2.593 c1.686,1.745,2.604,4.131,2.519,6.545c-0.127,3.677-0.002,8.959,1.318,13.241c1.294,4.19,3.373,6.366,6.355,6.65 c0.514,0.049,0.905,0.479,0.905,0.995v3.951c0,0.516-0.392,0.946-0.905,0.995c-2.982,0.284-5.062,2.46-6.355,6.65 c-1.32,4.282-1.445,9.564-1.318,13.241c0.085,2.414-0.833,4.8-2.519,6.545C77.19,81.079,75.039,82,72.748,82z M12.098,51.114 c3.353,0.683,5.764,3.341,7.176,7.917c1.405,4.551,1.541,10.071,1.406,13.901c-0.064,1.875,0.649,3.729,1.961,5.086 C23.875,79.296,25.515,80,27.258,80h45.49c1.743,0,3.384-0.704,4.618-1.982c1.311-1.356,2.024-3.211,1.959-5.085 c-0.134-3.831,0.003-9.353,1.406-13.901c1.412-4.576,3.822-7.234,7.171-7.917v-2.229c-3.349-0.683-5.759-3.341-7.171-7.917 c-1.403-4.549-1.54-10.07-1.406-13.901c0.065-1.874-0.648-3.729-1.959-5.085C76.132,20.704,74.491,20,72.748,20h-45.49 c-1.743,0-3.383,0.704-4.617,1.981c-1.312,1.357-2.025,3.211-1.961,5.086c0.135,3.83-0.001,9.351-1.406,13.901 c-1.412,4.576-3.823,7.234-7.176,7.917V51.114z"
-        ></path>
-        <path
-          fill="#6666a4"
-          d="M27.258,77c-1.182,0-1.99-0.58-2.46-1.065c-0.748-0.775-1.156-1.832-1.119-2.898 c0.142-4.06-0.01-9.939-1.538-14.89c-1.277-4.138-3.21-6.649-5.273-8.146c2.063-1.497,3.996-4.01,5.273-8.146 c1.528-4.95,1.68-10.83,1.538-14.891c-0.037-1.065,0.371-2.122,1.119-2.897C25.268,23.58,26.076,23,27.258,23h45.49 c1.183,0,1.99,0.58,2.46,1.066c0.748,0.774,1.156,1.83,1.118,2.896"
-        ></path>
-        <path
-          fill="#1f212b"
-          d="M27.258,77.5c-1.356,0-2.281-0.662-2.819-1.218c-0.843-0.873-1.301-2.063-1.26-3.264 c0.141-4.022-0.009-9.843-1.516-14.725c-1.108-3.589-2.82-6.243-5.09-7.89c-0.129-0.094-0.206-0.244-0.206-0.404 s0.077-0.311,0.206-0.404c2.27-1.646,3.981-4.301,5.09-7.89c1.507-4.882,1.656-10.702,1.516-14.726 c-0.042-1.2,0.417-2.39,1.26-3.262c0.538-0.557,1.463-1.219,2.819-1.219h45.49c1.357,0,2.282,0.663,2.819,1.219 c0.843,0.872,1.302,2.062,1.259,3.262c-0.01,0.276-0.223,0.504-0.518,0.482c-0.276-0.01-0.492-0.242-0.482-0.518 c0.033-0.931-0.323-1.854-0.978-2.531c-0.403-0.417-1.094-0.914-2.101-0.914h-45.49c-1.006,0-1.697,0.496-2.101,0.913 c-0.654,0.678-1.012,1.602-0.979,2.532c0.143,4.101-0.012,10.04-1.561,15.056c-1.088,3.523-2.745,6.211-4.933,7.999 c2.188,1.788,3.845,4.476,4.933,7.999c1.549,5.016,1.703,10.955,1.561,15.055c-0.033,0.932,0.324,1.855,0.979,2.534 c0.403,0.416,1.095,0.912,2.101,0.912c0.276,0,0.5,0.224,0.5,0.5S27.534,77.5,27.258,77.5z"
-        ></path>
-        <path
-          fill="#1f212b"
-          d="M37.25,77.5h-4.125c-0.276,0-0.5-0.224-0.5-0.5s0.224-0.5,0.5-0.5h4.125c0.276,0,0.5,0.224,0.5,0.5 S37.526,77.5,37.25,77.5z"
-        ></path>
-        <g>
-          <path
-            fill="#6666a4"
-            d="M77.864,41.854c1.277,4.137,3.21,6.649,5.271,8.146c-2.062,1.497-3.994,4.01-5.271,8.146 c-1.526,4.948-1.679,10.828-1.538,14.89c0.038,1.067-0.37,2.123-1.118,2.897C74.738,76.42,73.931,77,72.748,77H39.875"
-          ></path>
-          <path
-            fill="#1f212b"
-            d="M72.748,77.5H39.875c-0.276,0-0.5-0.224-0.5-0.5s0.224-0.5,0.5-0.5h32.873 c1.007,0,1.697-0.497,2.101-0.914c0.654-0.678,1.011-1.601,0.978-2.532c-0.142-4.101,0.014-10.041,1.561-15.055 c1.088-3.523,2.745-6.21,4.931-7.999c-2.186-1.789-3.843-4.476-4.931-7.999c-0.082-0.264,0.066-0.544,0.33-0.625 c0.263-0.085,0.544,0.066,0.625,0.33c1.108,3.588,2.82,6.242,5.088,7.89c0.129,0.094,0.206,0.244,0.206,0.404 s-0.077,0.311-0.206,0.404c-2.268,1.647-3.979,4.302-5.088,7.89c-1.505,4.881-1.655,10.701-1.516,14.725 c0.043,1.201-0.416,2.391-1.259,3.263C75.03,76.837,74.105,77.5,72.748,77.5z"
-          ></path>
-        </g>
-        <g>
-          <path
-            fill="#fff"
-            d="M55.603,49.023v-0.051c3.379-0.584,6.016-3.751,6.016-7.24c0-2.466-0.948-4.555-2.743-6.04 c-1.788-1.48-4.299-2.263-7.259-2.263H38.056v33.127h13.631c3.542,0,6.482-0.865,8.502-2.502c2.023-1.639,3.092-4.024,3.092-6.898 C63.282,52.816,60.199,49.555,55.603,49.023z M49.253,47.461h-5.8v-9.697h6.901c3.786,0,5.87,1.661,5.87,4.677 C56.223,45.678,53.748,47.461,49.253,47.461z M43.452,51.521h6.854c4.952,0,7.462,1.789,7.462,5.317 c0,3.523-2.475,5.386-7.158,5.386h-7.158V51.521z"
-          ></path>
-          <path
-            fill="#1f212b"
-            d="M51.688,67.057H38.056c-0.276,0-0.5-0.224-0.5-0.5V33.43c0-0.276,0.224-0.5,0.5-0.5h13.562 c3.079,0,5.699,0.822,7.578,2.378c1.912,1.583,2.924,3.805,2.924,6.425c0,3.063-1.923,5.911-4.621,7.164 c3.825,1.128,6.283,4.269,6.283,8.261c0,3.029-1.133,5.549-3.277,7.286C58.395,66.153,55.346,67.057,51.688,67.057z M38.556,66.057 h13.132c3.427,0,6.258-0.826,8.188-2.391c1.901-1.54,2.906-3.791,2.906-6.509c0-4.067-2.908-7.137-7.236-7.638 c-0.252-0.029-0.442-0.243-0.442-0.497v-0.05c0-0.243,0.175-0.451,0.415-0.493c3.141-0.542,5.602-3.506,5.602-6.747 c0-2.313-0.886-4.268-2.562-5.655c-1.697-1.404-4.098-2.147-6.94-2.147H38.556V66.057z M50.61,62.724h-7.158 c-0.276,0-0.5-0.224-0.5-0.5V51.521c0-0.276,0.224-0.5,0.5-0.5h6.854c6.581,0,7.963,3.163,7.963,5.817 C58.269,60.634,55.549,62.724,50.61,62.724z M43.952,61.724h6.658c4.418,0,6.658-1.644,6.658-4.886 c0-3.241-2.277-4.817-6.963-4.817h-6.354V61.724z M49.253,47.961h-5.801c-0.276,0-0.5-0.224-0.5-0.5v-9.697 c0-0.276,0.224-0.5,0.5-0.5h6.901c4.048,0,6.37,1.887,6.37,5.177C56.724,45.949,54.001,47.961,49.253,47.961z M43.952,46.961h5.301 c2.952,0,6.471-0.784,6.471-4.521c0-3.452-2.92-4.177-5.37-4.177h-6.401V46.961z"
-          ></path>
-        </g>
-      </svg>
-    ),
-  },
+ 
   {
     name: "Tailwind CSS",
     url: (
@@ -632,49 +562,7 @@ export const SkillsInfo = [
       </svg>
     ),
   },
-  {
-    name: "Discord Bot",
-    url: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        width="60"
-        height="60"
-        viewBox="0 0 100 100"
-      >
-        <path
-          fill="#78a2d2"
-          d="M80.89,27.501c-10.11-7.714-19.728-7.5-19.728-7.5c-1.74,1.926-2.355,3.663-2.801,4.595	C55.728,24.21,52.946,24,50,24c-2.75,0-5.356,0.183-7.833,0.521c-0.313,0.043-1.142-2.641-3.33-4.52c0,0-9.618-0.214-19.728,7.5	c0,0-10.11,18.643-10.11,41.642c0,0,6.485,10.357,22,10.857l3-5c-1.956,0.378-5.068-2.292-4-5.848C34.856,71.1,41.716,73,50,73	c8.274,0,15.139-1.913,19.994-3.858C71.145,72.595,68.131,75.238,66,75l3,5c15.515-0.5,22-10.857,22-10.857	C91,46.143,80.89,27.501,80.89,27.501z M37.5,64c-4.687,0-8.5-4.479-8.5-9.983s3.813-9.983,8.5-9.983s8.5,4.479,8.5,9.983	S42.187,64,37.5,64z M62.5,64c-4.687,0-8.5-4.485-8.5-9.999s3.813-9.999,8.5-9.999s8.5,4.485,8.5,9.999S67.187,64,62.5,64z"
-        ></path>
-        <ellipse
-          cx="62.5"
-          cy="54.001"
-          fill="none"
-          stroke="#000"
-          strokeLinejoin="round"
-          strokeMiterlimit="10" 
-          strokeWidth="2"
-          rx="7.5"
-          ry="8.999"
-        ></ellipse>
-        <ellipse
-          cx="37.5"
-          cy="54.017"
-          fill="none"
-          stroke="#000"
-          strokeLinejoin="round"
-          strokeMiterlimit="10" 
-          strokeWidth="2"
-          rx="7.5"
-          ry="8.983"
-        ></ellipse>
-        <path d="M69,81c-0.351,0-0.677-0.184-0.857-0.485l-3-5c-0.156-0.26-0.186-0.577-0.08-0.861c0.104-0.285,0.333-0.506,0.621-0.602 c0.118-0.039,0.288-0.084,0.496-0.137c0.873-0.223,2.498-0.637,3.061-1.749c0.23-0.456,0.272-1.027,0.125-1.706 C63.157,72.81,56.647,74,50,74c-6.681,0-13.198-1.189-19.391-3.537c-0.161,0.674-0.13,1.241,0.095,1.693 c0.552,1.111,2.209,1.529,3.1,1.754c0.216,0.054,0.392,0.1,0.512,0.14c0.288,0.096,0.517,0.317,0.621,0.602 c0.105,0.284,0.076,0.601-0.08,0.861l-3,5c-0.187,0.311-0.534,0.491-0.89,0.485C15.102,80.488,8.428,70.115,8.151,69.674 c-0.1-0.159-0.152-0.343-0.152-0.531c0-22.987,10.129-41.93,10.231-42.119c0.067-0.125,0.16-0.233,0.272-0.318 c10.269-7.836,19.946-7.715,20.356-7.705c0.231,0.005,0.453,0.09,0.629,0.241c1.564,1.344,2.467,3.008,3.006,4.001 c0.041,0.076,0.079,0.146,0.114,0.211c4.919-0.62,10.241-0.604,15.151,0.047c0.468-1.041,1.18-2.533,2.66-4.172 c0.185-0.204,0.445-0.323,0.72-0.329c0.409-0.009,10.087-0.132,20.356,7.705c0.112,0.085,0.205,0.194,0.272,0.318 C81.871,27.213,92,46.155,92,69.143c0,0.188-0.053,0.372-0.152,0.531C91.571,70.115,84.897,80.488,69.032,81 C69.021,81,69.011,81,69,81z M67.535,75.615l2.017,3.361c13.104-0.65,19.41-8.686,20.447-10.142 c-0.085-21.142-8.86-38.687-9.891-40.671c-8.445-6.369-16.577-7.077-18.499-7.154c-1.162,1.379-1.728,2.645-2.111,3.504 c-0.085,0.19-0.162,0.362-0.234,0.514c-0.189,0.395-0.61,0.622-1.048,0.558c-5.127-0.751-10.766-0.777-15.913-0.073 c-0.807,0.115-1.136-0.52-1.566-1.315c-0.438-0.809-1.151-2.123-2.277-3.19c-1.788,0.062-10.017,0.708-18.568,7.156 C18.861,30.15,10.085,47.715,10,68.835c1.037,1.456,7.343,9.492,20.447,10.142l2.015-3.358c-1.191-0.361-2.792-1.049-3.549-2.572 c-0.592-1.192-0.536-2.634,0.166-4.286c0.212-0.5,0.788-0.739,1.292-0.537C36.617,70.729,43.222,72,50,72 c6.75,0,13.352-1.274,19.622-3.787c0.511-0.206,1.093,0.042,1.299,0.554c0.672,1.663,0.707,3.11,0.104,4.302 C70.264,74.571,68.704,75.254,67.535,75.615z"></path>
-        <path d="M42.877,29.472c-0.246,0-0.46-0.182-0.494-0.433c-0.037-0.274,0.154-0.526,0.428-0.563 c3.178-0.432,6.571-0.573,9.849-0.411c0.276,0.014,0.488,0.249,0.475,0.524c-0.013,0.276-0.239,0.487-0.523,0.475 c-3.217-0.158-6.547-0.02-9.665,0.403C42.923,29.47,42.899,29.472,42.877,29.472z"></path>
-        <path d="M57.868,29.592c-0.025,0-0.051-0.002-0.077-0.006c-0.966-0.148-1.95-0.27-2.926-0.361c-0.274-0.026-0.477-0.27-0.451-0.545 c0.026-0.275,0.278-0.478,0.545-0.451c0.994,0.094,1.999,0.218,2.984,0.369c0.272,0.042,0.46,0.297,0.418,0.57 C58.323,29.416,58.11,29.592,57.868,29.592z"></path>
-      </svg>
-    ),
-  },
+ 
 
   {
     name: "JWT",
@@ -759,7 +647,7 @@ export const SkillsInfo = [
 
 export const AutomationList = [
   {
-    img: "OC Manager",// reemplaza con tu imagen
+    
     subTitle: "Sistema de Control Financiero",
     description: "Este sistema está orientado al control financiero de las órdenes de compra. Los equipos cargan los documentos correspondientes mediante un formulario; una vez enviados, los datos se integran automáticamente en un flujo de trabajo gestionado por n8n, que extrae la información relevante y la organiza en un Excel. Además, de forma periódica, se envían notificaciones por correo electrónico a los usuarios, recordándoles las órdenes de compra pendientes de reclamar con los clientes.",
     iconTools: n8n,
@@ -768,7 +656,7 @@ export const AutomationList = [
     statusIcon: "Proyecto Privado"
   },
   {
-    img: "OC Manager", // reemplaza con tu imagen
+  
     subTitle: "Sistema de Gestión de Entregables y Estructura de Carpetas",
     description: "Este sistema automatiza la creación y seguimiento de entregables. Los equipos solicitan la creación de carpetas en Google Drive mediante un formulario, y n8n genera la estructura y entrega un Excel con los enlaces organizados. Los equipos cargan los archivos en las carpetas correspondientes, y el sistema realiza un conteo diario, registrando automáticamente los datos en un Excel por fecha y entregable, facilitando el seguimiento y control de cada entrega.",
     iconTools: n8n,
@@ -778,7 +666,7 @@ export const AutomationList = [
   },
 
   {
-    img: "OC Manager",
+   
     subTitle: "Sistema para captura y organización de métricas de influencers",
     description: "Este sistema, desarrollado en Python y alojado en Azure, permite a los equipos cargar imágenes con métricas e información de influencers. Utilizando OCR y traductor de texto, el sistema extrae automáticamente los datos y los organiza en un Excel, facilitando el análisis y seguimiento de las métricas.",
     iconTools: python,
@@ -789,7 +677,7 @@ export const AutomationList = [
   
 
   {
-    img: "OC Manager",
+  
     subTitle: "Generador automático de briefs",
     description: "Los equipos completan un formulario cargando todos los archivos disponibles para elaborar un brief. El formulario es procesado mediante n8n y un LLM, que genera automáticamente un brief completo y adaptado al área seleccionada, proporcionando información relevante y útil para el equipo.",
     iconTools: n8n,
@@ -798,7 +686,7 @@ export const AutomationList = [
     statusIcon: "Proyecto Privado"
   },
   {
-    img: "OC Manager",
+
     subTitle: "Revisión de piezas publicitarias",
     description: "Este sistema permite que los equipos carguen, mediante un formulario, piezas publicitarias junto con su versión aprobada. n8n procesa los archivos y un LLM genera automáticamente un reporte final indicando los errores encontrados y cuáles piezas están correctas. El flujo facilita la revisión de las piezas publicitarias, detectando problemas como texto faltante, logos desalineados o cualquier error de diseño, asegurando que solo las piezas correctas se publiquen.",
     iconTools: n8n,

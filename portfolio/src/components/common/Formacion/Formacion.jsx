@@ -41,21 +41,23 @@ export const Formacion = () => {
                 >
                   {" "}
                   {item.institucion}{" "}
-                  <span className="size-3 inline-block text-cAccent transition-all duration-150 ease-in group-hover:-translate-y-[1px] group-hover:translate-x-[1px] group-hover:text-cBlue">
-                    {" "}
-                    <svg
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M7 7h10v10"></path>
-                      <path d="M7 17 17 7"></path>
-                    </svg>{" "}
-                  </span>{" "}
+                   <span className="  inline-block text-cAccent transition-all duration-150 ease-in group-hover:-translate-y-[1px] group-hover:translate-x-[1px] group-hover:text-fuchsia-500">
+                {" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-4 h-4"
+                >
+                  <path d="M7 7h10v10" />
+                  <path d="M7 17 17 7" />
+                </svg>
+                {}
+              </span>
                 </a>{" "}
                 <div className="first-of-type:mt-0 mt-5">
                   {" "}
