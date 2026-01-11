@@ -12,7 +12,7 @@ const ContentList = ({ title, contentList, isDarkTheme }) => {
   });
 
   return (
-    <section className="max-w-6xl mx-auto mb-6 pt-8 lg:pt-12 lg:scroll-mt-16">
+    <section className="max-w-6xl mx-auto mb-6 pt-8 lg:pt-12 lg:scroll-mt-16" id="automatizaciones">
       <header className="flex items-center mb-3 space-x-4">
         <h2
           className={`${
@@ -134,9 +134,9 @@ const ContentList = ({ title, contentList, isDarkTheme }) => {
       {contentList.length > ITEMS_TO_SHOW && (
         <button
           onClick={() => setShowAll(!showAll)}
-          className={`${
+          className={`duration-500 transition-[text-decoration-color] hover:underline hover:decoration-wavy hover:[text-decoration-color:#a21caf] font-medium block  mt-6 mx-auto w-fit ${
             isDarkTheme ? "text-cAccent" : "text-neutral-600"
-          } font-medium block hover:underline mt-6 mx-auto w-fit`}
+          } `}
         >
           {showAll ? "Ver menos" : "Ver más"}
         </button>

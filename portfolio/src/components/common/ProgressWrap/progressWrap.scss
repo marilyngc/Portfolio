@@ -154,22 +154,25 @@
     transition: all 300ms linear; 
 }
 
-.circle_mode:after {
-    position: absolute;
-    font-family: 'unicons';
-    content: '☽';
-    top: 0;
-    left: 0;
-    z-index: 2;
-    font-size: 25px;
-    line-height: 40px;
-    text-align: center;
-    width: 100%;
-    height: 40px;
-    color: white;
-    opacity: 0;
-    transition: all 300ms linear; 
+.circle_mode::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  transition: all 300ms linear;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cg transform='scale(0.03125 0.03125)' fill='white'%3E%3Cpath d='M788.256 709.888c-262.016 0-474.24-212.384-474.24-474.24 0-86.24 24.736-166.016 64.992-235.616-218.368 62.976-379.008 261.984-379.008 500.608 0 288.992 234.24 523.36 523.264 523.36 238.624 0 437.76-160.736 500.736-379.008-69.76 40.128-149.504 64.896-235.744 64.896z'/%3E%3C/g%3E%3C/svg%3E");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px 15px;
 }
+
 
 .switched .circle_mode {
     left: calc(100% - 20px); /* Cambia para que esté en el extremo derecho del switch */

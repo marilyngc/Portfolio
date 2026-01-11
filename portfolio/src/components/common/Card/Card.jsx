@@ -14,10 +14,10 @@ export const Card = () => {
             href={proyect.link}
             target="_blank"
             rel="noreferrer"
-            className={`block group border-2   rounded-xl shadow_translate-transition hover:sm:shadow sm:hover:-translate-y-1 ${
+            className={`block group border   rounded-xl shadow_translate-transition hover:sm:shadow sm:hover:-translate-y-1 ${
               isDarkTheme
-                ? `dark:border-gray-700 dark:hover:border-gray-300/30`
-                : ` border-gray-400 hover:border-gray-500`
+                ? `dark:border-white/20 dark:hover:border-white/60`
+                : ` border-black/50 hover:border-black/90`
             }`}
           >
             <article className="relative flex flex-col justify-between w-full py-6 px-7">
@@ -67,8 +67,8 @@ export const Card = () => {
                   ))}
                 </div> */}
 
-              <footer class="dark:text-cWhite flex items-center justify-between mt-3">
-                <div class="flex items-center gap-2 flex-wrap">
+              <footer className="dark:text-cWhite flex items-center justify-between mt-3">
+                <div className="flex items-center gap-2 flex-wrap">
                   {proyect.event.map((eventItem, index) => (
                     <p
                       key={index}
@@ -87,8 +87,8 @@ export const Card = () => {
                   ))}
                 </div>
               </footer>
-              <div className="absolute grid place-items-center right-3 top-3 bg-white dark:bg-gray-800 w-9 h-9 rounded-full scale-0 group-hover:scale-90 transition-transform dark:opacity-80 border-0 border-slate-100 border-indigo-100/50 dark:border-slate-200/20 shadow-sm">
-                <HiOutlineArrowUpRight className=" text-gray-400 dark:text-gray-50 text-2xl" />
+              <div className="absolute grid place-items-center right-3 top-3 bg-white dark:bg-white w-9 h-9 rounded-full scale-0 group-hover:scale-90 transition-transform dark:opacity-80 border-0 border-slate-100 border-indigo-100/50 dark:border-slate-200/20 shadow-sm">
+                <HiOutlineArrowUpRight className=" text-gray-400 dark:text-black text-2xl" />
               </div>
             </article>
           </a>

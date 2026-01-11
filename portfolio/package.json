@@ -13,7 +13,6 @@
     "@vercel/analytics": "^1.6.1",
     "dotenv": "^16.4.5",
     "font-awesome": "^4.7.0",
-    "gsap": "^3.12.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",

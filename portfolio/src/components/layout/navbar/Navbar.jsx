@@ -141,24 +141,13 @@ export const Navbar = () => {
               isDarkTheme ? "text-cWhite": "text-slate-600"
              }`}
             aria-label="Sobre mí"
-            href="/#about-me"
+            href="/#automatizaciones"
           >
             {" "}
-            Sobre mí{" "}
+            Automatizaciones{" "}
           </a>
         </li>
-        <li >
-          <a
-            className={`text-cWhite hover:text-fuchsia-500 transition-colors duration-150 ease-in  ${
-              isDarkTheme ? "text-cWhite": "text-slate-600"
-             }`}
-            aria-label="tecnologias"
-            href="#tecnologias"
-          >
-            {" "}
-            Tecnologías{" "}
-          </a>
-        </li>{" "}
+    
       </ul>
       <div className="h-16 w-16  items-center justify-center flex  ">
  <DarkMode />

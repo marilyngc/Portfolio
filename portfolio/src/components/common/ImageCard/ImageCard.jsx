@@ -19,9 +19,10 @@ export const ImageCard = () => {
             <div
               
               className={`cardProyect mb-5  relative rounded-xl  overflow-hidden flex col-span-7 lg:col-span-4  ${
-                isDarkTheme ? `dark:bg-gray-700/50 ` : ` bg-gray-500/50`
+                isDarkTheme ? `bg-gradient-to-br from-black/10 via-black/25 to-transparent  ` : ` bg-gradient-to-br from-black/10 via-black/25 to-transparent`
               }`}
             >
+              
               <span>
                 <img
                   style={{

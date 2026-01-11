@@ -74,7 +74,7 @@ useEffect(() => {
   return (
     <div className={opend ? "show-chatbot" : ""}>
       <button onClick={openChatbot} className="chatbot-toggler">
-        <span className="material-symbols-outlined">mode_comment</span>
+        <span className="material-symbols-outlined">Smart_toy</span>
 
         <span className="material-symbols-outlined">close</span>
       </button>

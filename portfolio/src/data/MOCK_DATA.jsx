@@ -16,9 +16,10 @@ export const DataProyects = [
     title: "My Crypto Essecen",
     description:
 "El proyecto estuvo basado en un dashboard de administración y usuario. Me encargué del backend, desarrollando CRUD, pagos con Stripe y wallets, validaciones, envíos de emails, seguimiento de envíos, whitelist y la creación de perfumes NFT.",   
-    event: ["Node.js", "MongoDB","Next.js","Socket.io"],
+    event: ["Node.js", "MongoDB","Socket.io","Next.js","Thirdweb"],
     linkLive: "https://mycryptoessence.com",
     linkCode: "/",
+    isPrivate: true
   },
   {
     img: millonario,
@@ -29,6 +30,7 @@ export const DataProyects = [
     event: ["Python", "Pygame"],
     linkLive: "https://www.youtube.com/watch?v=Sey38ziXK74",
     linkCode: "https://github.com/marilyngc/Quien_quiere_ser_millonario_juego",
+    isPrivate: false
   },
   {
     img: tictactou,
@@ -38,6 +40,7 @@ export const DataProyects = [
     event: [ "Javascript","Node.js", "Socket", "Express", ],
     linkLive: "https://realtime-tictactoe-ujnb.onrender.com",
     linkCode: "https://github.com/marilyngc/RealTime-TicTacToe",
+    isPrivate: false
 
   },
 

@@ -14,20 +14,24 @@ import { Portada } from "../common/Portada/Portada.jsx";
 import AboutMe from "../common/AboutMe/AboutMe.jsx";
 import Automation from "../common/Automation/Automation.jsx";
 
+
 export const Home = () => {
   const { contextTheme, setContextTheme } = useThemeContext();
   return (
     <div id={contextTheme}>
+
       <header className="scroll-animation hidden lg:block full p-2 fixed top-0 left-0 right-0 z-[9999]">
         <Navbar />
       </header>
 
       <main className="w-full px-2 z-0">
+    
         <Portada />
 
-        <Cursor />
+       
         <AboutMe />
-
+  
+   <Cursor />
         <Experince />
         <ChatBot />
         <ProgressWrap />
@@ -37,9 +41,11 @@ export const Home = () => {
 
         <Automation />
         <Social />
+       
       </main>
 
       <Footer />
+       
     </div>
   );
 };

@@ -1,5 +1,4 @@
 import avatar from "@/assets/avatar/avatar.webp";
-
 import { GiBullseye } from "react-icons/gi";
 import { MdCloudDownload } from "react-icons/md";
 import { useThemeContext } from "../../../context/ThemeContext";
@@ -50,6 +49,7 @@ export const Portada = () => {
               className="text-[clamp(14px,6vw,18px)] font-normal text-base block w-fit mx-auto rounded-md bg-cPaper"
               data-astro-cid-bbe6dxrz=""
             >
+              
               @mxtel
             </strong>
           </header>
@@ -67,17 +67,21 @@ export const Portada = () => {
             }`}
           >
             {" "}
+            
             {item.title}
           </strong>
-          <h2
-            className={`text-[clamp(2.125rem,2vw+1rem,3rem)] font-medium leading-none text-pretty ${
-              isDarkTheme ? `dark:text-slate-100` : `text-slate-600`
-            }`}
-          >
-            {" "}
-            Apasionada por crear productos digitales
-          </h2>
-
+            <h2
+              className={`text-[clamp(2.125rem,2vw+1rem,3rem)] font-medium leading-none text-pretty ${
+                isDarkTheme ? `dark:text-slate-100` : `text-slate-600`
+              }`}
+            >
+              {" "}
+          
+          
+              Apasionada por crear productos digitales
+           
+         
+ </h2>
           <div className="mt-1 mx-auto  pt-4 gap-4 text-gray-400 flex  flex-col  items-center  sm:flex-row sm:justify-center sm:items-center  ">
             <div className="flex  justify-center gap-4">
               {/* Disponibilidad */}
